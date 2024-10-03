@@ -22,8 +22,7 @@ const build = require("./config/esbuild.defaults.js")
 //
 // ```
 // const esbuildOptions = {
-//   publicPath: "/my_subfolder/_bridgetown/static",
-//   ...
+//   publicPath: "/14_red_door",
 // }
 // ```
 
@@ -32,6 +31,7 @@ const build = require("./config/esbuild.defaults.js")
  * @type {BuildOptions}
  */
 const esbuildOptions = {
+  publicPath: "/14_red_door",
   plugins: [
     // add new plugins here...
   ],
