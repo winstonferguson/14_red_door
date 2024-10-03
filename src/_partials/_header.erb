@@ -1,0 +1,7 @@
+<header>
+  <%= svg relative_url('/images/logo.svg') %>
+  <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
+  <div class="contact">
+    <a class="nav-link" href="<%= relative_url '/contact' %>" data-controller="hover-shuffle">Contact</a>
+  </div>
+</header>

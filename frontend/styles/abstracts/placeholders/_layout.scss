@@ -1,0 +1,16 @@
+@use "../variables" as *;
+
+%flex {
+  align-items: center;
+  display: flex;
+}
+
+%grid {
+  display: grid;
+}
+
+%page-width {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 3rem;
+}

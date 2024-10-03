@@ -1,0 +1,11 @@
+@use "./abstracts" as *;
+@use "partials";
+
+body {
+  background: $color-magnolia;
+  color: $color-licorice;
+  font-family: neue-haas-unica, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
