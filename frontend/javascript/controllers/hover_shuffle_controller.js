@@ -21,7 +21,6 @@ export default class extends Controller {
     let charArr = text.split("");
     let frame = 0;
 
-    
     // shuffle at given speed
     this.inter = setInterval(() => {
       if ( frame < this.framesMax ) {

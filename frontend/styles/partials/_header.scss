@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 
-header {
+.header {
   @extend %grid;
   @extend %page-width;
 

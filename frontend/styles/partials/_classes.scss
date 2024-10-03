@@ -27,7 +27,6 @@
 .grid {
   &--50-50 {
     @extend %grid;
-    row-gap: 3rem;
     grid-template-columns: 50% 50%;
   }
 }
@@ -54,9 +53,26 @@
   }
 }
 
+.service {
+  background-color: $color-magnolia;
+  margin-bottom: 3rem;
+}
+
 .service--title,
 .service--summary {
   font-size: 1.3rem; 
   line-height: 1.5;
   max-width: 400px;
+}
+
+.service--content {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s, opacity 0.5s;
+
+  .open & {
+    max-height: 2000px;
+    opacity: 1;
+    transition: max-height 1.5s, opacity 1.5s;
+  }
 }
