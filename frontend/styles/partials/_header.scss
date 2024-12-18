@@ -1,15 +1,25 @@
 @use "../abstracts" as *;
 
 .header {
-  @extend %grid;
   @extend %page-width;
+  
+  display: flex;
+  gap: 48px;
+  margin-bottom: 60px;
 
-  grid-template-columns: 50% 33.3% 16.6%;
-  padding-top: 4rem;
-  padding-bottom: 7rem;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-bottom: 0;
+  }
 
   nav {
+    display: none;
+    @media screen and (min-width: $breakpoint-tablet) {
+      display: block;
+    }
+
     ul {
+      display: flex;
+      gap: 48px;
       list-style: none;
       margin: 0;
       padding: 0;
@@ -19,19 +29,36 @@
       }
     }
   }
+
+  .contact {
+    margin-left: auto;
+  }
 }
 
-.nav-link {
-  color: $color-licorice;
-  font-size: 1.5rem;
-  font-weight: 400;
+a.nav-link {
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: -6px -6px 16px 0px rgba(0, 0, 0, 0.14) inset, 6px 6px 16px 0px rgba(255, 255, 255, 0.70) inset, 6px 6px 16px 0px rgba(0, 0, 0, 0.14), -6px -6px 16px 0px rgba(255, 255, 255, 0.70);
+  display: flex;
+  font-size: 24px;
+  height: 52px;
+  justify-content: center;
+  line-height: 52px;
+  padding: 0px 28px 8px 28px; 
   text-decoration: none;
+  text-transform: lowercase;
+
+  &.active {
+    background: $color-red;
+    color: $color-gray-1 !important;
+    box-shadow: -2px -2px 2px 0px rgba(255, 255, 255, 0.25) inset, 3px 3px 3px 0px rgba(0, 0, 0, 0.25) inset;
+  }
 
   &:hover {
 
   }
 
   &:visited {
-    color: $color-licorice;
+    color: $color-gray-main;
   }
 }

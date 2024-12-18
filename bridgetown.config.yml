@@ -24,10 +24,10 @@ template_engine: erb
 
 collections: 
   services:
-    output: false
+    output: true
     sort_by: position
-  works:
-    output: false
+  projects:
+    output: true
 # Other options you might want to investigate:
 #
 base_path: "/14_red_door" # the subpath of your site, e.g. /blog. If you set this option,

@@ -1,23 +1,22 @@
 ---
-layout: page
-title: Services
+layout: default
+title: Services | 14 Red Door
+page_class: services
 ---
 
-<div class="page-width">
+<div class="page-width content">
   <% collections.services.resources.each do |service| %>
-    <article class="service" data-controller="openable">
-      <header class="grid--50-50">
-        <div class="service--title">
-          <%= service.data.title %>
-        </div>
-        <div  class="service--summary">
-          <%= service.data.summary %>
-          <span class="toggle clickable">[+]</span>
-        </div>
-      </header>
-      <main class="service--content grid--50-50">
-        <%= service %>
-      </main>
-    </article>    
+    <a class="door" href="<%= service.relative_url %>">
+      <%= service.data.title %>
+    </a>
   <% end %>
 </div>
+<div class="page-width teaser">
+  <h3>what are you<br>interested in?</h3>
+  <p>open a door<br>explore your options</p>
+</div>
+
+
+
+
+

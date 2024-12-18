@@ -1,6 +1,14 @@
-<nav>
+<nav class="tablet">
   <ul>
-    <li><a class="nav-link hover-shuffle" href="<%= relative_url '/work' %>" data-controller="hover-shuffle">Work</a>,</li>
-    <li><a class="nav-link hover-shuffle" href="<%= relative_url '/services' %>" data-controller="hover-shuffle">Services</a></li>
+    <% @collections.each do |collection| %>
+      <li>
+        <a 
+          class="nav-link hover-shuffle <%= @resource.relative_url.include?(collection) ? 'active':'' %>" 
+          href="<%= relative_url "/#{collection}" %>" 
+        >
+          <%= collection %>
+        </a>
+      </li>
+    <% end %>
   </ul>
 </nav>

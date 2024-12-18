@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="content">
+  <div class="intro">
+    <h1><%= resource.data.title %></h1>
+    <div class="buttons">
+      <% resource.data.tags.each do |tag| %>
+        <span class="button"><%= tag %></span>
+      <% end %>
+    </div>
+  </div>
+  <div class="graphic">
+    <%= svg "/images/#{ resource.data.image }" %>
+  </div>
+  <div class="description">
+    <%= yield %>
+  </div>
+</div>
+<aside>
+  <div class="navigation">
+    <span class="desktop">Select</span>
+    <ul clas="links">
+      <% collections.services.resources.each do |service|  %>
+        <li class="link <%= resource == service ? 'active': '' %>"><a href="<%= service.relative_url %>"><%= svg "/images/#{ service.data.icon }" %></a></li>
+      <% end %>
+    </ul>
+  </div>
+  <a class="related desktop">View our <%= resource.data.title %> projects </a>    
+</aside>

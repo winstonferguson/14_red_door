@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Work
+layout: default
+title: Projects
 ---
 
 <div class="page-width">
