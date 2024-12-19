@@ -149,6 +149,7 @@
   }
 
   .filter {
+    @media screen and (min-width: $breakpoint-tablet) {
     display: flex;
     padding: 20px 60px;
     align-items: center;
@@ -196,6 +197,7 @@ margin-right: 45px;
 }
 
     }
+  }
   }
 
   

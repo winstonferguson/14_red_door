@@ -26,10 +26,10 @@
 }
 
 .tablet {
-  display: none !important;
+  display: none;
 
   @media screen and (min-width: $breakpoint-tablet) {
-    display: inherit !important;
+    display: inherit;
   }
 }
 

@@ -4,7 +4,7 @@ title: Projects
 page_class: projects
 ---
 
-<div class="filter">
+<div class="filter tablet">
   <h4>categories</h4>
   <span>all</span>
   <% collections.services.resources.each do |service| %>
