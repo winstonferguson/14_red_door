@@ -12,10 +12,14 @@
     padding: 22px 18px;
 
     @media screen and (min-width: $breakpoint-tablet) {
+      padding: 36px 43px;
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
       display: grid;
-      grid-template-columns: 180px 100px 180px 1fr;
+      grid-template-columns: 180px 100px 170px 1fr;
       grid-template-rows: 30px auto;      
-      column-gap: 60px;
+      column-gap: 50px;
       padding: 36px 43px;
     }
 
@@ -46,8 +50,10 @@
       margin: 0;
 
       @media screen and (min-width: $breakpoint-tablet) {
+        font-size: 22px;
         grid-column: 1;
         grid-row: 2;
+        line-height: 28px; 
       }
     }
 
@@ -63,6 +69,11 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+
+       @media screen and (min-width: $breakpoint-tablet) {
+          display: flex !important;
+
+        }
 
 
       @media screen and (min-width: $breakpoint-tablet) {
@@ -98,6 +109,10 @@
         &.category {
           border: 1px solid $color-gray-main;
           color: $color-gray-main;
+
+         
+
+          
         }
 
         &.service {
@@ -150,7 +165,7 @@
 
   .filter {
     @media screen and (min-width: $breakpoint-tablet) {
-    display: flex;
+    display: flex !important;
     padding: 20px 60px;
     align-items: center;
     gap: 45px;

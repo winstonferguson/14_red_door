@@ -20,7 +20,7 @@ page_class: projects
       <div class="tags services">
         <%= render(Shared::Tags.new(site: site, resource: project, filter: 'service')) %>
       </div>
-      <div class="tags categories">
+      <div class="tags categories tablet">
         <%= render(Shared::Tags.new(site: site, resource: project, filter: 'category', css_class: 'tablet')) %>
       </div>
       <p><%= project.data.summary %></p>
