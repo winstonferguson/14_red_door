@@ -18,26 +18,26 @@
 }
 
 .mobile {
-  display: inherit;
+  display: inherit !important;
 
   @media screen and (min-width: $breakpoint-tablet) {
-    display: none;
+    display: none !important;
   }
 }
 
 .tablet {
-  display: none;
+  display: none !important;
 
   @media screen and (min-width: $breakpoint-tablet) {
-    display: inherit;
+    display: inherit !important;
   }
 }
 
 .desktop {
-  display: none;
+  display: none !important;
 
   @media screen and (min-width: $breakpoint-desktop) {
-    display: block;
+    display: inherit !important;
   }
 }
 

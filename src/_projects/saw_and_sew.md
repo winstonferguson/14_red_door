@@ -1,6 +1,6 @@
 ---
 title: Saw & Sew
-tags: [3d, web, spatial, brand identity, graphic design, video]
+tags: [3d, web, spatial, brand identity, design, development, branding, creative direction, ui/ux]
 summary: Founded in 2018, Saw & Sew creates bespoke furniture, blending artistry, technology, and local materials to redefine design.
 position: 0
 layout: project

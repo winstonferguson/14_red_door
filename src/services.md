@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Services | 14 Red Door
+title: Services
 page_class: services
 ---
 

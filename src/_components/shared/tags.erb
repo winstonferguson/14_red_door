@@ -1,0 +1,3 @@
+<% @tags.each do |tag| %>
+  <span class="tag <%= tag[:category] %> <%= @css_class %>"><%= tag[:name] %></span> 
+<% end %>
