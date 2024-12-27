@@ -1,0 +1,13 @@
+<div class="intro">
+  <div class="copy"> 
+    <h1 class="title"><%= @resource.data.title %></h1>
+    <div class="tags services">
+      <%= render Shared::Tags.new(site: @site, resource: @resource, filter: 'service') %>
+    </div>
+  </div>
+  <div class="copy">
+    <% content.split('  ').select { |a| a.length > 2 }.each do |text| %>
+      <p><%= text %></p>
+    <% end %>
+  </div>
+</div>

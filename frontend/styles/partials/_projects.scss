@@ -1,5 +1,64 @@
 @use "../abstracts" as *;
 
+.tags {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+   @media screen and (min-width: $breakpoint-tablet) {
+      display: flex !important;
+
+    }
+
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    gap: 16px;
+  }
+
+  &.categories {
+    @media screen and (min-width: $breakpoint-tablet) {
+      grid-column: 3;
+      grid-row: 1 / span 2;
+    }
+  }
+
+  &.services {
+    @media screen and (min-width: $breakpoint-tablet) {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+    }
+  }
+
+  .tag {
+    align-items: center;
+    
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 14px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      padding: 12px 21px;
+    }
+
+    &.category {
+      border: 1px solid $color-gray-main;
+      color: $color-gray-main;
+
+     
+
+      
+    }
+
+    &.service {
+      border: 1px solid $color-red;
+      color: $color-red;
+    }
+  }
+}
+
+
 .projects {
   .card {
     align-items: flex-start;
@@ -64,63 +123,7 @@
       gap: 20px;
     } 
 
-    .tags {
-      align-items: flex-start;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-
-       @media screen and (min-width: $breakpoint-tablet) {
-          display: flex !important;
-
-        }
-
-
-      @media screen and (min-width: $breakpoint-tablet) {
-        gap: 16px;
-      }
-
-      &.categories {
-        @media screen and (min-width: $breakpoint-tablet) {
-          grid-column: 3;
-          grid-row: 1 / span 2;
-        }
-      }
-
-      &.services {
-        @media screen and (min-width: $breakpoint-tablet) {
-          grid-column: 2;
-          grid-row: 1 / span 2;
-        }
-      }
-
-      .tag {
-        align-items: center;
-        
-        border-radius: 50px;
-        display: flex;
-        justify-content: center;
-        padding: 10px 14px;
-
-        @media screen and (min-width: $breakpoint-tablet) {
-          padding: 12px 21px;
-        }
-
-        &.category {
-          border: 1px solid $color-gray-main;
-          color: $color-gray-main;
-
-         
-
-          
-        }
-
-        &.service {
-          border: 1px solid $color-red;
-          color: $color-red;
-        }
-      }
-    }
+    
 
     .link {
       align-items: center;
@@ -135,7 +138,7 @@
       height: 63px;
       justify-content: center;
       margin-top: 20px;
-      text-decoration: none;
+      text-transform: none;
       width: 63px;
 
       @media screen and (min-width: $breakpoint-tablet) {
@@ -183,6 +186,12 @@ font-weight: 400;
 line-height: 29px; /* 120.833% */
 text-transform: lowercase;
 
+svg {
+  width: 58px;
+height: 58px;
+flex-shrink: 0;
+}
+
 
     h4 {
 
@@ -220,5 +229,162 @@ margin-right: 45px;
 
 
 .project {
+  main {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      gap: 60px;
+      margin-top: 90px;
+    }
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    align-items: flex-start;
+align-self: stretch;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 60px;
+    }
+
+    .title {
+      color: $color-gray-main;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      margin: 0;
+      line-height: 1.1; /* 83.333% */
+      text-transform: lowercase;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        font-size: 36px;
+      }
+
+      @media screen and (min-width: $breakpoint-large-desktop) {
+        font-size: 48px;
+      }
+    }
+  }
+
+  .outro {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    min-width: 100%;
+
+    .copy {
+      @media screen and (min-width: $breakpoint-tablet) {
+        gap: 60px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: stretch
+        
+      }
+
+      p {
+        @media screen and (min-width: $breakpoint-tablet) {
+          width: 50%;
+          
+        }
+
+      }
+    }
+
+    .button {
+      align-self: flex-start;
+      display: inline-flex;
+      padding: 16px 20px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 50px;
+      border: 1px solid $color-gray-main;
+      background: $color-gray-1;
+      text-decoration: none;
+      font-size: 16px;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+
+        align-self: flex-end;
+      }
+
+    }
+  }
+
+  .copy {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    min-width: 100%;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      flex-direction: row;
+    }
+
+    @media screen and (min-width: $breakpoint-large-desktop) {
+      gap: 60px;
+    }
+
+    img {
+      @media screen and (min-width: $breakpoint-tablet) {
+        min-height: 100%;
+      }
+    }
+  }
+
+  .feature-image {
+    .landscape img {
+      height: 50vh;
+      width: 100%;
+    }
+
+    .portrait  img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  img {
+    border-radius: 50px;
+    display: block;
+    height: 50vh;
+
+    width: 100%;
+    object-fit: cover;
+
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      height: auto;
+    }
+  }
+
+  p {
+    color: var(--main, #504949);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 127.273% */
+    margin: 0;
+    max-width: 625px;
+    text-transform: lowercase;
+
+  }
   
 }

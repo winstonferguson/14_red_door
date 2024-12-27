@@ -1,0 +1,7 @@
+<gallery data-controller="image-row-sizer">
+
+  <% @srcs.each do |src| %>
+    <%= render Shared::Image.new(src: "#{@resource.data.image_directory}/#{src}") %>
+  <% end %>
+  
+</gallery>
