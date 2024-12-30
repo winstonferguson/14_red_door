@@ -5,6 +5,18 @@
   fill: $color-red;
 
 }
+
+
+.content {
+  @extend %page-width;
+
+  padding: 70px 50px;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    padding: 90px 65px;
+  }
+}
+
 .logo {
   height: 43px;
   width: 60px;
@@ -31,6 +43,20 @@
   @media screen and (min-width: $breakpoint-tablet) {
     display: inherit !important;
   }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 48px;
+  }
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .desktop {

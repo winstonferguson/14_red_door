@@ -3,6 +3,14 @@
 %flex {
   align-items: center;
   display: flex;
+
+  &-column {
+    @extend %flex;
+
+    align-items: flex-start;
+    align-self: stretch;
+    flex-direction: column;
+  }
 }
 
 %grid {

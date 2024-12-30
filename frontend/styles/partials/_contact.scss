@@ -1,0 +1,155 @@
+@use "../abstracts" as *;
+
+.contact {
+  .content {
+    @extend %flex-column;
+
+      gap: 50px;
+    }
+
+  .form {
+    @extend %flex-column;
+
+    gap: 30px;
+    position: relative;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      display: grid;
+      gap: 60px;
+      grid-template-columns: repeat(12, 1fr);
+    }
+
+    .group {
+      @extend %flex-column;
+
+      gap: 10px;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        grid-column: span 4;
+
+        &:last-of-type {
+          grid-column: span 6;
+        }
+      }
+
+      .input {
+        @extend %flex;
+        @extend %button;
+        
+        align-self: stretch;
+        background: $color-gray-1;
+        border: 1px solid $color-gray-main;
+        padding: 16px 24px;
+
+        &::file-selector-button {
+          background-color: $color-gray-1;
+          border: none;
+          color: $color-gray-main;
+          font-weight: 600;
+          text-decoration: underline;
+          text-transform: lowercase;
+        }
+      }
+
+      &--services {
+        align-self: stretch;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+        @media screen and (min-width: $breakpoint-tablet) {
+          gap: 25px;
+          grid-column: span 6;
+          grid-template-rows: 32px auto;
+        }
+
+        .label {
+          grid-column: span 2;
+        }
+
+        .input {
+          display: none;
+
+          &:checked + label {
+            border: none;
+            background: $color-gray-1;
+            box-shadow: -3px -3px 8px 0px rgba(255, 255, 255, 0.70) inset, 3px 3px 8px 0px rgba(0, 0, 0, 0.14) inset, 3px 3px 8px 0px rgba(255, 255, 255, 0.70), -3px -3px 8px 0px rgba(0, 0, 0, 0.14);
+            height: 57px;   
+            
+            @media screen and (min-width: $breakpoint-tablet) {
+              height: 100%;
+            }
+          }
+        }
+        
+        .button {
+          @extend %flex;
+          @extend %button;
+        
+          font-size: 20px;
+          height: 56px;
+          justify-content: center;
+
+          @media screen and (min-width: $breakpoint-tablet) {
+            height: 100%;
+          }
+        }
+      }
+
+      .text-area {
+        @extend %button;
+
+        align-self: stretch;
+        background-color: $color-gray-1;
+        border-radius: 40px;
+        border: 1px solid $color-gray-main;
+        min-height: 245px;
+        padding: 24px;
+      }
+    }
+
+    .label {
+      font-size: 20px;      
+    }
+
+    .submit {
+      @extend %button-red;
+
+      align-self: flex-end;
+      font-size: 24px;
+      padding: 16px 30px;   
+      
+      @media screen and (min-width: $breakpoint-tablet) {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+      }
+    }
+  }
+
+  .intro {
+    @extend %flex;
+
+    justify-content: space-between;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      gap: 100px;
+      justify-content: flex-start;
+    }
+
+    .title {
+      font-size: 30px;
+    }
+
+    .links {
+      @extend %flex-column;
+
+      justify-content: center;
+      gap: 16px;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        font-size: 22px;
+      }
+    }
+  }
+}

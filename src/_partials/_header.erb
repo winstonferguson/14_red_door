@@ -4,6 +4,6 @@
   </div>
   <%= render Shared::Navbar.new(site: site, resource: resource) %>
   <div class="contact tablet">
-    <a class="nav-link" href="<%= relative_url '/contact' %>">Contact</a>
+    <a class="nav-link <%= @resource.relative_url.include?('contact') ? 'active':'' %>" href="<%= relative_url '/contact' %>">Contact</a>
   </div>
 </header>
