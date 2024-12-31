@@ -351,6 +351,10 @@ align-self: stretch;
     .landscape img {
       height: 50vh;
       width: 100%;
+
+      @media screen and (min-width: $breakpoint-large-desktop) {
+        height: auto;
+      }
     }
 
     .portrait  img {
