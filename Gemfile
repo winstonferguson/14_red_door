@@ -37,4 +37,6 @@ gem "puma", "< 7"
 
 gem "bridgetown-svg-inliner", "~> 2.0"
 
-  gem "image_processing", "~> 1.0"
+gem "image_processing", "~> 1.0"
+
+gem 'ruby-vips', '~> 2.1', '>= 2.1.4'
