@@ -15,8 +15,8 @@
 
     @media screen and (min-width: $breakpoint-desktop) {
       gap: 60px;
-      grid-template-columns: 225px 225px 225px 225px;
-      padding: 90px 15%;  
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 90px;  
     }
   }
 
@@ -48,8 +48,13 @@
     @media screen and (min-width: $breakpoint-desktop) {
       border-radius: 34px;
       font-size: 32px;
-      height: 384px;
+      height: 450px;
       max-width: 100%;
+    }
+
+    @media screen and (min-width: $max-page-width) {
+      height: 40vh;
+      max-width: 20vw;
     }
   
     &:hover {
@@ -109,6 +114,10 @@
       grid-template-columns: 20% 1fr 30%;
       padding: 140px 0;
     }
+
+    @media screen and (min-width: $max-page-width) {
+      min-height: 50vh;
+    }
   
   
     .intro {
@@ -124,6 +133,7 @@
       }
 
       @media screen and (min-width: $breakpoint-large-desktop) {
+        align-self: center;
         grid-column: 1;
         grid-row: 1;
       }
@@ -162,6 +172,7 @@
       }
 
       @media screen and (min-width: $breakpoint-large-desktop) {
+        align-self: center;
         grid-row: 1;
         grid-column: 3;
       }
@@ -184,6 +195,7 @@
       }
 
       @media screen and (min-width: $breakpoint-large-desktop) {
+        align-self: center;
         grid-column: 2;
         grid-row: 1;
       }

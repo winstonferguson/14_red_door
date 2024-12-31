@@ -17,6 +17,16 @@
   }
 }
 
+.full-width {
+  @media screen and (min-width: $max-page-width) {
+    width: 90vw;
+    margin: 5% 50%;
+    max-width: 2200px;    
+    transform: translate(-50%, 0%);
+  }
+  
+}
+
 .logo {
   height: 43px;
   width: 60px;
@@ -38,10 +48,10 @@
 }
 
 .tablet {
-  display: none !important;
+  display: none;
 
   @media screen and (min-width: $breakpoint-tablet) {
-    display: inherit !important;
+    display: flex;
   }
 }
 

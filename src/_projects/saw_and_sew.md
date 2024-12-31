@@ -4,8 +4,9 @@ link: https://sawandsew.com
 page_class: project
 image_directory: 'projects/saw_and_sew'
 position: 0
+status: complete
 summary: Founded in 2018, Saw & Sew creates bespoke furniture, blending artistry, technology, and local materials to redefine design.
-tags: [3d, web, spatial, brand identity, design, development, branding, creative direction, ui/ux]
+tags: [3d, web, spatial, design, development, branding, creative direction, ui/ux]
 title: Saw & Sew
 ---
 

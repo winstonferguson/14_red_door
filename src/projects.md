@@ -5,31 +5,34 @@ page_class: projects
 ---
 
 <div class="filter tablet">
-  <h4>categories</h4>
+  <h4 class="heading">categories</h4>
   <span>all</span>
   <% collections.services.resources.each do |service| %>
     <span><%= service.data.title %></span>
   <% end %>
-
 </div>
 
 <div class="page-width content">
-  <% collections.projects.resources.each do |project| %>
-    <div class="card">
-      <h3><%= project.data.title %></h3>
+  <% collections.projects.resources.sort{ |p| p.data.position }.each do |project| %>
+    <div class="card <%= project.data.status %>">
+      <h3 class="title"><%= project.data.title %></h3>
       <div class="tags services">
         <%= render(Shared::Tags.new(site: site, resource: project, filter: 'service')) %>
       </div>
       <div class="tags categories tablet">
         <%= render(Shared::Tags.new(site: site, resource: project, filter: 'category', css_class: 'tablet')) %>
       </div>
-      <p><%= project.data.summary %></p>
-      <a class="link"  href="<%= project.relative_url %>">
-        <span class="tablet">view project</span>  
-        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 0.5625C2.25 0.25184 2.50184 0 2.8125 0H8.4375C8.74816 0 9 0.25184 9 0.5625V6.13125C9 6.44191 8.74816 6.69375 8.4375 6.69375C8.12684 6.69375 7.875 6.44191 7.875 6.13125V1.9205L0.960248 8.83525C0.740578 9.05492 0.384422 9.05492 0.164752 8.83525C-0.0549175 8.61558 -0.0549175 8.25942 0.164752 8.03975L7.07951 1.125H2.8125C2.50184 1.125 2.25 0.87316 2.25 0.5625Z" fill="#504949" />
-        </svg>  
-      </a>
+      <p class="summary"><%= project.data.summary %></p>
+      <% if project.data.status == 'complete' %>
+        <a class="link"  href="<%= project.relative_url %>">
+          <span class="tablet">view project</span>  
+          <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 0.5625C2.25 0.25184 2.50184 0 2.8125 0H8.4375C8.74816 0 9 0.25184 9 0.5625V6.13125C9 6.44191 8.74816 6.69375 8.4375 6.69375C8.12684 6.69375 7.875 6.44191 7.875 6.13125V1.9205L0.960248 8.83525C0.740578 9.05492 0.384422 9.05492 0.164752 8.83525C-0.0549175 8.61558 -0.0549175 8.25942 0.164752 8.03975L7.07951 1.125H2.8125C2.50184 1.125 2.25 0.87316 2.25 0.5625Z" fill="#504949" />
+          </svg>  
+        </a>
+      <% else %>
+        <span class="coming-soon">coming soon</span>
+      <% end %>
     </div>
   <% end %>
 </div>

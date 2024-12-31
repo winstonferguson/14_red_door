@@ -3,6 +3,7 @@ layout: default
 image_directory: 'projects/spike'
 page_class: project
 position: 1
+status: complete
 summary:  an architectural concept for the ban of nuclear weaponry.
 tags: [3d, spatial, architecture, 3d rendering, installation, worldbuilding]
 title: Spike
