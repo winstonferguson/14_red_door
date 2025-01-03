@@ -19,6 +19,10 @@
       grid-template-columns: repeat(12, 1fr);
     }
 
+    @media screen and (min-width: $max-page-width) {
+      gap: 90px;
+    }
+
     .group {
       @extend %flex-column;
 

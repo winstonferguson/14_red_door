@@ -112,13 +112,11 @@
     @media screen and (min-width: $breakpoint-large-desktop) {
       gap: 5%;
       grid-template-columns: 20% 1fr 30%;
-      padding: 140px 0;
     }
 
     @media screen and (min-width: $max-page-width) {
-      min-height: 50vh;
+      min-height: 40vh;
     }
-  
   
     .intro {
       @extend %flex-column;

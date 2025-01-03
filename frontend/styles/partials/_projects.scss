@@ -331,7 +331,7 @@ align-self: stretch;
     gap: 36px;
   }
 
-  gallery {
+  .gallery {
     display: flex;
     flex-direction: column;
     gap: 36px;
@@ -366,6 +366,14 @@ align-self: stretch;
       height: auto;
       width: 100%;
     }
+  }
+
+  .feature-video {
+    .video {
+      border-radius: 50px;
+      min-height: 50vh;
+      object-fit: cover;
+    }    
   }
 
   img {

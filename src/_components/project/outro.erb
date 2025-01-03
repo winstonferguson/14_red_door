@@ -1,7 +1,9 @@
 <div class="outro">
   <div class="copy">
-    <% content.split('  ').select { |a| a.length > 2 }.each do |text| %>
-      <p><%= text %></p>
+    <% unless content.nil? %>
+      <% content.split('  ').select { |a| a.length > 2 }.each do |text| %>
+        <p><%= text %></p>
+      <% end %>
     <% end %>
   </div>
   <a href='<%= relative_url "#{@resource.collection.label.downcase}" %>' class="button">back to <%= @resource.collection.label.downcase %></a>

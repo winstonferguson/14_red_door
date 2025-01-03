@@ -1,5 +1,6 @@
 @use "./abstracts" as *;
 @use "partials";
+@use "projects";
 
 body {
   background: $color-gray-1;
@@ -38,6 +39,7 @@ h6{
 
 p {
   line-height: 1.25;
+  margin: 0;
 }
 
 textarea {

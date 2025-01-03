@@ -15,6 +15,10 @@
   @media screen and (min-width: $breakpoint-tablet) {
     padding: 90px 65px;
   }
+
+  @media screen and (min-width: $max-page-width) {
+    padding: 5vw 65px;
+  }
 }
 
 .full-width {

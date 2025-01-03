@@ -1,8 +1,51 @@
 ---
 layout: default
-page_class: projects
+page_class: home
 ---
 
-<div style="height: 300vh;">
-    <div id="scrolly-video"></div>
+<div class="content">
+  <div class="topography">
+    <%= svg "/images/topography-left.svg" %>
+    <%= svg "/images/topography-right.svg" %>
   </div>
+  <div class="intro">
+    <h1 class="title">Creative House</h1>
+    <p class="copy">At 14 red door, we open doors to solutions in visual and spatial practices.</p>
+  </div>
+  <div class="prelude">
+    <div class="row">
+      <div class="copy">
+        <p>Inspired by forgotten memories, 14 Red Door explores limitless creativity in visual and spatial realms.</p>
+        <p>We open doors to the unseen, undefined, and extraordinary.</p>
+      </div>
+      <div class="links">
+        <a href="#services">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="43" viewBox="0 0 38 43" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0004 0C20.3121 0 21.3751 1.06928 21.3751 2.38867V34.8439L33.9456 22.1997C34.8732 21.2665 36.3766 21.2665 37.3043 22.1997C38.2319 23.1328 38.2319 24.6449 37.3043 25.578L20.6797 42.3002C19.752 43.2333 18.2487 43.2333 17.321 42.3002L0.695747 25.578C-0.231916 24.6449 -0.231916 23.1328 0.695747 22.1997C1.62341 21.2665 3.12677 21.2665 4.05443 22.1997L16.6249 34.8439V2.38867C16.6249 1.06928 17.6879 0 18.9996 0H19.0004Z" fill="#504949"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="copy">
+        <p>14 red door is a creative house building in 4 fields:</p>
+      </div>
+      <div class="links">
+      </div>
+    </div>
+  </div>
+  <div id="services" class="services"> 
+    <h3 class="heading">explore our services:</h3>
+
+    <ul class="links">
+      <% collections.services.resources.each do |service| %>
+      <li class="link">
+        <a href="<%= service.relative_url %>">
+          <%= svg "/images/#{ service.data.image }" %>
+        </a>
+      </li>
+    <% end %>
+    </ul>
+  </div>
+  
+</div>

@@ -1,4 +1,4 @@
-<gallery class="full-width" data-controller="image-row-sizer">
+<gallery class="full-width gallery" data-controller="image-row-sizer">
 
   <% @srcs.each do |src| %>
     <%= render Shared::Image.new(src: "#{@resource.data.image_directory}/#{src}") %>

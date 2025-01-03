@@ -13,7 +13,7 @@ page_class: projects
 </div>
 
 <div class="page-width content">
-  <% collections.projects.resources.sort{ |p| p.data.position }.each do |project| %>
+  <% collections.projects.resources.sort_by{ |p| p.data.position }.each do |project| %>
     <div class="card <%= project.data.status %>">
       <h3 class="title"><%= project.data.title %></h3>
       <div class="tags services">
