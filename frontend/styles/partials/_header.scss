@@ -115,12 +115,14 @@ a.nav-link {
   }
 
   &:hover {
-
+    box-shadow: 
+      -3px -3px 8px 0px rgba(255, 255, 255, 0.70) inset, 
+      3px 3px 8px 0px rgba(0, 0, 0, 0.14) inset, 
+      3px 3px 8px 0px rgba(255, 255, 255, 0.70), 
+      -3px -3px 8px 0px rgba(0, 0, 0, 0.14);
   }
 
   &:visited {
     color: $color-gray-main;
   }
-
-  
 }

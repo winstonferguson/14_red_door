@@ -1,12 +1,22 @@
 @use "../abstracts" as *;
 
 .home {
+  .copy {
+    font-size: 32px;
+  } // home > copy
+
+  .heading {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+  } // home > heading
+
   .content {
     padding: 60px 0;
 
     @media screen and (min-width: $breakpoint-tablet) {
       padding: 120px 0;
-    }
+    } // home > content > @ $breakpoint-tablet
 
     .intro {
       @extend %flex-column;
@@ -23,8 +33,8 @@
         > * {
           width: 60%;
         }
-      }
-    }
+      } // home > content > intro @ $breakpoint-tablet
+    } // home > content > intro
 
     .prelude {
       @extend %flex-column;
@@ -34,9 +44,10 @@
       margin-top: 35vh;
 
       @media screen and (min-width: $breakpoint-tablet) {
-        gap: 160px;
-        margin-top: 50vh;
-      }
+        gap: 36vw;
+        
+        margin: 36vw auto 18vw auto;
+      } // home > content > prelude @ $breakpoint-tablet
 
       .row {
         @extend %flex-column;
@@ -48,7 +59,6 @@
         box-shadow: 
           0px 30px 64px 0px rgba(149, 149, 149, 0.10), 
           0px 1px 2px 0px rgba(80, 73, 73, 0.15) inset;
-        font-size: 32px;
         gap: 1rem;
         padding: 36px;
 
@@ -57,7 +67,7 @@
           flex-direction: row;
           justify-content: space-between;
           padding: 60px;
-        }
+        } // home > content > prelude > row @ $breakpoint-tablet
 
         .copy {
           @extend %flex-column;
@@ -65,36 +75,38 @@
 
           @media screen and (min-width: $breakpoint-tablet) {
             gap: 2rem;
+          } // home > content > prelude > row > copy @ $breakpoint-tablet
+
+          @media screen and (min-width: $breakpoint-desktop) {
             max-width: 38%;
-          }
-        }
+          } // home > content > prelude > row > copy @ $breakpoint-desktop
+        } // home > content > prelude > row > copy
 
         .links {
           align-self: end;
-        }
-
-      }
-    }
-  }
+        } // home > content > prelude > row > links
+      } // home > content > prelude > row
+    } // home > content > prelude
+  } // home > content
   
   .services {
-    margin: 160px 0;
+    margin: 35vh 0;
 
-    .heading {
-      font-size: 2rem;
-      font-weight: 400;
-      text-align: center;
+    @media screen and (min-width: $breakpoint-tablet) {
+      margin: 18vw 0;
     }
 
     .links {
-      @extend %flex;
-      gap: 1rem;
+      @extend %flex-column;
+
+      align-items: center;
+      gap: 3rem;
       justify-content: center;
       margin-top: 2rem;
 
       @media screen and (min-width: $breakpoint-tablet) {
-        gap: 2rem;
-      }
+        flex-direction: row;
+      } // home > services > links @ $breakpoint-tablet
 
       .link {
         @extend %flex;
@@ -110,18 +122,32 @@
           9px 9px 32px 0px rgba(0, 0, 0, 0.15), 
           -1px -1px 2px 0px rgba(255, 255, 255, 0.15) inset, 
           6px 6px 24px 0px rgba(0, 0, 0, 0.04) inset;
-        height: 360px;
+        height: 120px;
         justify-content: center;
         padding: 50px 0px;
-        width:  230px;
+        width:  360px;
+
+        @media screen and (min-width: $breakpoint-tablet) {
+          height: 360px;
+          width:  230px;
+        } // home > services > links > link @ $breakpoint-tablet
+
+        &:hover {
+          border: none;
+          box-shadow: 
+            -12px -12px 32px 0px rgba(255, 255, 255, 0.70) inset, 
+            12px 12px 32px 0px rgba(0, 0, 0, 0.14) inset, 
+            12px 12px 32px 0px rgba(255, 255, 255, 0.70), 
+            -12px -12px 32px 0px rgba(0, 0, 0, 0.14);
+        } // home > services > links > link:hover
 
         .vector {
-          width: 80px;
-        }
-        
-      }
-    }
-  }
+          width: 100px;
+        } // home > services > links > link > vector
+      } // home > services > links > link
+    } // home > services > links
+  } //  home > services
+
 
 
   .topography {
@@ -146,8 +172,8 @@
         top: 0;
 
         transform: translate(-50%, 0);
-      }
-    }
+      } // home > topography > topography-left @ $breakpoint-tablet
+    }  // home > topography > topography-left
 
     &-right {
       right: 0;
@@ -155,10 +181,10 @@
       transform: translate(60%, 0);
 
       @media screen and (min-width: $breakpoint-tablet) {
-        top: 200px;
+        top: 250px;
         transform: translate(50%, 0);
-      }
-    }
+      } // home > topography > topography-right @ $breakpoint-tablet
+    } // home > topography > topography-right
 
     .device {
       height: 100vh;
@@ -167,7 +193,7 @@
 
       @media screen and (min-width: $breakpoint-tablet) {
         height: auto;
-      }
-    }    
-  }
-}
+      } // home > topography > device @ $breakpoint-tablet
+    }  // home > topography > device 
+  } // home > topography 
+} // home

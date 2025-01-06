@@ -6,6 +6,12 @@
 
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .content {
   @extend %page-width;
@@ -28,7 +34,6 @@
     max-width: 2200px;    
     transform: translate(-50%, 0%);
   }
-  
 }
 
 .logo {

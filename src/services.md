@@ -11,9 +11,9 @@ page_class: services
     </a>
   <% end %>
 </div>
-<div class="teaser">
-  <h3 class="heading">what are you<br>interested in?</h3>
-  <p class="copy">open a door<br>explore your options</p>
+<div class="teaser full-width">
+  <h3 class="heading tablet">what are you<br>interested in?</h3>
+  <p class="copy">open a door:<br>explore your options</p>
 </div>
 
 

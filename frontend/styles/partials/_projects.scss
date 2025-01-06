@@ -1,5 +1,75 @@
 @use "../abstracts" as *;
 
+.projects {
+  .items {
+    @extend %flex-column;
+
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 2rem;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      flex-direction: row;
+    }
+
+
+
+    .item {
+      border: 1px solid $color-gray-main;
+      border-radius: 50px;
+      height: 280px;
+      width: 100%;
+      max-width: 375px;
+      overflow: hidden;
+
+      .link {
+        background-color: $color-gray-1;
+        position: relative;
+
+        &:last-of-type {
+          @extend %flex;
+
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .image {
+        background-size: cover;
+        background-position: center;
+        filter: grayscale(100%) blur(15px) opacity(25%) brightness(125%);
+        min-height: 100%;
+        min-width: 100%;
+        transition: filter 0.25s;
+
+        &:hover {
+          filter: grayscale(100%) blur(0px) opacity(25%) brightness(125%);
+          transition: filter 0.5s;
+        }
+      }
+
+      .title {
+        font-size: 1.5rem;
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        width: calc(100% - 80px);
+      }
+
+      .summary {
+        font-size: 1rem;
+        position: absolute;
+        bottom: 30px;
+        left: 40px;
+        width: calc(100% - 80px);
+      }
+    }
+  }
+}
+
 .tags {
   align-items: flex-start;
   display: flex;
@@ -137,14 +207,14 @@
         justify-self: end;
         padding: 28px;
         width: auto;        
-      } // projects > card > link @$breakpoint-tablet
+      } // projects > card > link @ $breakpoint-tablet
     } // projects > card > link
 
     .services {
       @media screen and (min-width: $breakpoint-tablet) {
         grid-column: 2;
         grid-row: 1 / span 2;
-      } // projects > card > services @$breakpoint-tablet
+      } // projects > card > services @ $breakpoint-tablet
     } // projects > card > services
     
     .summary {
@@ -154,7 +224,7 @@
         font-size: 22px;
         grid-column: 1;
         grid-row: 2;
-      } // projects > card > summary @$breakpoint-tablet
+      } // projects > card > summary @ $breakpoint-tablet
     } // projects > card > summary
 
     .title {
@@ -166,7 +236,7 @@
       @media screen and (min-width: $breakpoint-tablet) {
         grid-column: 1;
         grid-row: 1;
-      } // projects > card > title @$breakpoint-tablet
+      } // projects > card > title @ $breakpoint-tablet
     } // projects > card > title 
   } // projects > card
 
@@ -179,7 +249,7 @@
     @media screen and (min-width: $breakpoint-tablet) {
       gap: 47px;
       padding-top: 60px;
-    } // projects > content @$breakpoint-tablet
+    } // projects > content @ $breakpoint-tablet
   } // projects > content
 
   .filter {
@@ -202,7 +272,7 @@
       height: 90px;
       margin: 60px auto 12px auto;
       padding: 20px 60px;
-    } // projects > filter @$breakpoint-tablet
+    } // projects > filter @ $breakpoint-tablet
 
     .heading {
       font-weight: 400;

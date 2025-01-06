@@ -4,7 +4,7 @@ page_class: home
 ---
 
 <div class="content">
-  <div class="topography">
+  <div class="topography">  
     <%= svg "/images/topography-left.svg" %>
     <%= svg "/images/topography-right.svg" %>
   </div>
@@ -35,7 +35,7 @@ page_class: home
     </div>
   </div>
   <div id="services" class="services"> 
-    <h3 class="heading">explore our services:</h3>
+    <h3 class="heading center">explore our services:</h3>
 
     <ul class="links">
       <% collections.services.resources.each do |service| %>
@@ -45,6 +45,26 @@ page_class: home
         </a>
       </li>
     <% end %>
+    </ul>
+  </div>
+  <div id="projects" class="projects"> 
+    <h3 class="heading center">view some of our projects:</h3>
+    <ul class="items">
+      <% collections.projects.resources.sort_by{ |p| p.data.position }[0..1].each do |project| %>
+      <li class="item" >
+        <a class="link" href="<%= project.relative_url %>">
+          <span class="title"><%= project.data.title %></span>
+          <div class="image" style="background-image: url('<%= relative_url responsive_image_path(project.data.image_directory + '/feature.png', width: 640) %>')">
+          </div>
+          <span class="summary"><%= project.data.summary %></span>
+        </a>
+      </li>
+    <% end %>
+      <li class="item" >
+        <a class="link" href="<%= relative_url '/projects' %>">
+          view more
+        </a>
+      </li>
     </ul>
   </div>
   

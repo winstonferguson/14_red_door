@@ -23,7 +23,7 @@ page_class: contact
     </div>
     <div class="group">
       <label class="label">attach file(s)</label>
-      <input class="input" type="file" name="files"  />
+      <input class="input" type="file" name="files" multiple="true" accept="application/pdf, image/png, image/jpeg" />
     </div>
     <div class="group--services">
       <span class="label">which of these interest you?</span>
@@ -43,12 +43,6 @@ page_class: contact
         <input class="input" type="checkbox" id="web" name="web" value="web" />
         <label class="button" for="web">
         web
-        </label>
-      </div>
-      <div class="service">
-        <input class="input" type="checkbox" id="spatial" name="spatial" value="spatial" />
-        <label class="button" for="spatial">
-        spatial
         </label>
       </div>
     </div>

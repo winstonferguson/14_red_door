@@ -22,20 +22,15 @@
   @media screen and (min-width: $breakpoint-tablet) {
     font-size: 24px;
     padding: 80px 60px;
-  }
+  } // footer @ $breakpoint-tablet
 
   @media screen and (min-width: $breakpoint-desktop) {
-    box-shadow: unset;
     display: grid;
     gap: 60px;
     grid-template-columns: 1fr 1fr;
     margin-top: 20vh;
-    padding: 40px 30px;
-  }
-
-  @media screen and (min-width: $breakpoint-tablet) {
-
-  }
+    padding: 70px 50px;
+  } // footer @ $breakpoint-desktop
 
   .contact {
     @extend %flex-column;
@@ -50,9 +45,10 @@
 
   .heading {
     @media screen and (min-width: $breakpoint-desktop) {
+      font-size: 40px;
       grid-column: 1;
       grid-row: 1;
-    }
+    } // footer > heading @ $breakpoint-desktop
   }
 
   .nav {
@@ -67,11 +63,11 @@
       grid-row: span 2;
       justify-self: end;
       min-width: 0;
-    }
+    } // footer > nav @ $breakpoint-desktop
 
     @media screen and (min-width: $max-page-width) {
       grid-template-columns: repeat(3, 200px);
-    }
+    } // footer > nav @ $max-page-width
 
     .subnav {
       @extend %flex-column;
