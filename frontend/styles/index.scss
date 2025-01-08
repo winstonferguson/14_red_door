@@ -2,6 +2,8 @@
 @use "partials";
 @use "projects";
 
+
+
 body {
   background: $color-gray-1;
   color: $color-gray-main;
@@ -18,6 +20,7 @@ body {
     padding: 105px 65px;
   }
 }
+
 
 a {
   color: $color-gray-main;

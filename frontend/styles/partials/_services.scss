@@ -44,8 +44,8 @@
     @media screen and (min-width: $breakpoint-desktop) {
       border-radius: 34px;
       font-size: 32px;
-      height: 38.4vw;
-      max-width: 19vw;
+      min-height: 38.4vw;
+      max-width: 350px;
     }
 
     &:nth-of-type(1) {
@@ -58,7 +58,7 @@
 
     @media screen and (min-width: $max-page-width) {
       height: 40vh;
-      max-width: 12vw;
+      max-width: 400px;
     }
   
     &:hover {
@@ -68,13 +68,12 @@
         inset 12px 12px 32px 0px rgba(0, 0, 0, 0.14), 
         12px 12px 32px 0px rgba(255, 255, 255, 0.70), 
         -12px -12px 32px 0px rgba(0, 0, 0, 0.14);
-      transition: box-shadow 1s linear;
+      transition: box-shadow 0.25s linear;
     }
   }
 
   .teaser {
     @extend %flex-column;
-    @extend %page-width;
 
     align-items: flex-end;
     align-self: stretch;
@@ -111,15 +110,17 @@
       gap: 10%;
       grid-template-columns: 1fr 1fr;
       padding-bottom: 160px;
+      min-height: 640px;
     }
 
     @media screen and (min-width: $breakpoint-large-desktop) {
       gap: 5%;
-      grid-template-columns: 25% 35% 30%;
+      grid-template-columns: 1fr 1fr 1fr;
     }
 
     @media screen and (min-width: $max-page-width) {
-      min-height: 40vh;
+      grid-template-columns: 1fr 1fr 1fr;
+      min-height: 40vh;      
     }
   
     .intro {
@@ -188,18 +189,28 @@
         0px 30px 64px 0px rgba(149, 149, 149, 0.10), 
         0px 1px 2px 0px rgba(80, 73, 73, 0.15) inset;
       grid-row: 1;
+      height: 180px;
+      justify-self: center;
       padding: 15%;
+      width: 180px;
 
       @media screen and (min-width: $breakpoint-desktop) {
         grid-column: 2;
         grid-row: 1 / span 2;
+        height: 250px;
         padding: 70px 85px;
+        width: 250px;
       }
 
       @media screen and (min-width: $breakpoint-large-desktop) {
         align-self: center;
         grid-column: 2;
         grid-row: 1;
+      }
+
+      @media screen and (min-width: $max-page-width) {
+        height: 350px;
+        width: 350px;
       }
     }
   }
@@ -278,6 +289,7 @@
               -3px -3px 8px 0px rgba(0, 0, 0, 0.14);
             height: 62px;
             width: 62px;
+            transition: box-shadow 0.25s linear;
           }
   
           &.active {

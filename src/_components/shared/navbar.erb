@@ -4,7 +4,8 @@
       <li>
         <a 
           class="nav-link hover-shuffle <%= @resource.relative_url.include?(collection) ? 'active':'' %>" 
-          href="<%= relative_url "/#{collection}" %>" 
+          href="<%= relative_url "/#{collection}" %>"
+          rel="prefetch" 
         >
           <%= collection %>
         </a>
