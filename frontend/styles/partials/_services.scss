@@ -46,6 +46,7 @@
       font-size: 32px;
       min-height: 38.4vw;
       max-width: 350px;
+      max-height: 650px;
     }
 
     &:nth-of-type(1) {
@@ -56,10 +57,9 @@
       justify-self: start;
     }
 
-    @media screen and (min-width: $max-page-width) {
-      height: 40vh;
-      max-width: 400px;
-    }
+    // @media screen and (min-width: $max-page-width) {
+    //   height: 40vh;
+    // }
   
     &:hover {
       background: $color-gray-1;
