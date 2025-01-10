@@ -4,7 +4,7 @@ title: Services
 page_class: services
 ---
 
-<div class="content full-width">
+<div class="content">
   <% collections.services.resources.each do |service| %>
     <a class="door" href="<%= service.relative_url %>">
       <%= service.data.title %>

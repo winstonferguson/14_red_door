@@ -1,0 +1,62 @@
+@use "../abstracts" as *;
+
+.header {
+
+  .mobile {
+    .button {
+      box-shadow: none;
+      position: relative;
+  
+      &::after {
+        @extend %after-box;
+        @extend %header-link-shadow;
+  
+        animation: fadeIn 0.5s ease-in forwards;
+        border-radius: 50px;
+        transition: box-shadow 0.5s linear;
+      }
+  
+      &:hover {
+        @extend %hover-shadow;
+  
+        transition: box-shadow 0.5s linear;
+  
+        &::after {
+          animation: fadeOut 0.1s ease-in forwards;
+        }
+      }
+    }
+
+  }
+  
+
+  .nav-link {
+    &:not(.active) {
+      box-shadow: none;
+      position: relative;
+
+      &::after {
+        @extend %after-box;
+        @extend %header-link-shadow;
+
+        animation: fadeIn 0.5s ease-in forwards;
+        border-radius: 50px;
+        transition: box-shadow 0.5s linear;
+      } // header > nav-link::after
+
+      &:hover {
+        @extend %hover-shadow;
+
+        transition: box-shadow 0.5s linear;
+
+        &::after {
+          animation: fadeOut 0.1s ease-in forwards;
+        }
+      } // header > nav-link::hover::after
+
+
+    } // header > nav-link:not(.active)
+    
+  }
+
+}

@@ -5,7 +5,7 @@ page_class: project erosion
 position: 2
 status: complete
 summary:  an animation, showcasing the erosion shoe by jamesjfrys and Zellerfeld.
-tags: [3d, spatial]
+tags: [3d, spatial, 3d animation, 3d motion, prodviz]
 title: Erosion
 ---
 

@@ -38,15 +38,13 @@
     justify-self: end;
 
     .button {
+      @extend %header-link-shadow;
+
       -webkit-appearance: none;
       appearance: none;
+      background-color: transparent;
       border: none;
       border-radius: 32px;
-      box-shadow: 
-        -6px -6px 16px 0px rgba(0, 0, 0, 0.14) inset, 
-        6px 6px 16px 0px rgba(255, 255, 255, 0.70) inset, 
-        6px 6px 16px 0px rgba(0, 0, 0, 0.14), 
-        -6px -6px 16px 0px rgba(255, 255, 255, 0.70);
       height: 43px;
       width: 72px;
     }
@@ -96,30 +94,28 @@
 }
 
 a.nav-link {
-  align-items: center;
+  @extend %flex;
+  @extend %header-link-shadow;
+
   border-radius: 50px;
-  box-shadow: -6px -6px 16px 0px rgba(0, 0, 0, 0.14) inset, 6px 6px 16px 0px rgba(255, 255, 255, 0.70) inset, 6px 6px 16px 0px rgba(0, 0, 0, 0.14), -6px -6px 16px 0px rgba(255, 255, 255, 0.70);
-  display: flex;
   font-size: 24px;
   height: 52px;
   justify-content: center;
   line-height: 52px;
   padding: 0px 28px 8px 28px; 
-  text-decoration: none;
-  text-transform: lowercase;
 
   &.active {
     background: $color-red;
     color: $color-gray-1 !important;
-    box-shadow: -2px -2px 2px 0px rgba(255, 255, 255, 0.25) inset, 3px 3px 3px 0px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 
+      -2px -2px 2px 0px rgba(255, 255, 255, 0.25) inset, 
+      3px 3px 3px 0px rgba(0, 0, 0, 0.25) inset;
   }
 
-  &:hover {
-    box-shadow: 
-      -3px -3px 8px 0px rgba(255, 255, 255, 0.70) inset, 
-      3px 3px 8px 0px rgba(0, 0, 0, 0.14) inset, 
-      3px 3px 8px 0px rgba(255, 255, 255, 0.70), 
-      -3px -3px 8px 0px rgba(0, 0, 0, 0.14);
+  &:not(.active) {
+    &:hover {
+      @extend %hover-shadow;
+    }
   }
 
   &:visited {

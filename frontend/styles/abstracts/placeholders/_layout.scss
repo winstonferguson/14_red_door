@@ -1,5 +1,15 @@
 @use "../variables" as *;
 
+%after-box {
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;   
+}
+
 %flex {
   align-items: center;
   display: flex;

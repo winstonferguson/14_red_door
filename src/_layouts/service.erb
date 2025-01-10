@@ -19,15 +19,18 @@ layout: default
   </div>
 </div>
 <aside class="aside">
-  <nav class="puffy nav">
-    <span class="desktop">Select</span>
-    <ul class="links">
-      <% collections.services.resources.each do |service|  %>
-        <li class="link <%= resource == service ? 'active': '' %>">
-          <a class="icon" href="<%= service.relative_url %>" data-turbo-preload="true" ><%= svg "/images/#{ service.data.icon }" %></a>
-        </li>
-      <% end %>
-    </ul>
-  </nav>
-  <a class="puffy desktop"><span class="projects">View our <%= resource.data.title %> projects</span></a>    
+  <div class="container" data-controller="landing">
+    <nav class="shaded nav">
+      <span class="desktop">Select</span>
+      <ul class="links">
+        <% collections.services.resources.each do |service|  %>
+          <li class="link <%= resource == service ? 'active': '' %>">
+            <a class="icon" href="<%= service.relative_url %>" data-turbo-preload="true" ><%= svg "/images/#{ service.data.icon }" %></a>
+          </li>
+        <% end %>
+      </ul>
+    </nav>
+    <a class="shaded desktop"><span class="projects">View our <%= resource.data.title %> projects</span></a>    
+  </div>
+ 
 </aside>

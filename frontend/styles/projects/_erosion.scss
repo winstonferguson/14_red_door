@@ -9,7 +9,7 @@
     @media screen and (min-width: $breakpoint-tablet) {
       gap: 60px;
       grid-template-columns: 1fr 1fr;
-    }
+    } // erosion > gallery @$breakpoint-tablet
 
     .picture {
       width: 100% !important; 
@@ -17,8 +17,8 @@
       &:first-of-type {
         @media screen and (min-width: $breakpoint-tablet) {
           grid-column: span 2;
-        }
-      }
-    }
-  }
-}
+        } // erosion > gallery > picture:first-of-type @$breakpoint-tablet
+      } // erosion > gallery > picture:first-of-type
+    } // erosion > gallery > picture
+  } // erosion > gallery
+} // erosion

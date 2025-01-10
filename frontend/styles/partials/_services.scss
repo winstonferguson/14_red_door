@@ -11,14 +11,14 @@
     @media screen and (min-width: $breakpoint-tablet) {
       gap: 80px;
       padding: 80px;
-    }
+    } // services > content @ $breakpoint-tablet
 
     @media screen and (min-width: $breakpoint-desktop) {
       gap: 60px;
       grid-template-columns: 1fr 1fr 1fr;
       padding: 90px;  
-    }
-  }
+    } // services > content @ $breakpoint-desktop
+  } // services > content
 
   .door {
     @extend %flex-column;
@@ -40,27 +40,22 @@
     justify-self: center;
     width: 100%;
 
-
     @media screen and (min-width: $breakpoint-desktop) {
       border-radius: 34px;
       font-size: 32px;
-      min-height: 38.4vw;
+      height: 38.4vw;
       max-width: 350px;
       max-height: 650px;
-    }
+    } // services > door @ $breakpoint-desktop
 
     &:nth-of-type(1) {
       justify-self: end;
-    }
+    } // services > door &:nth-of-type(1)
 
     &:nth-of-type(3) {
       justify-self: start;
-    }
+    } // services > door &:nth-of-type(3)
 
-    // @media screen and (min-width: $max-page-width) {
-    //   height: 40vh;
-    // }
-  
     &:hover {
       background: $color-gray-1;
       box-shadow: 
@@ -69,8 +64,8 @@
         12px 12px 32px 0px rgba(255, 255, 255, 0.70), 
         -12px -12px 32px 0px rgba(0, 0, 0, 0.14);
       transition: box-shadow 0.25s linear;
-    }
-  }
+    } // services > door &:hover
+  } // services > door
 
   .teaser {
     @extend %flex-column;
@@ -82,21 +77,20 @@
     @media screen and (min-width: $breakpoint-tablet) {
       flex-direction: row;
       justify-content: space-between;
-    }
+    } // services > teaser @ $breakpoint-tablet
     
     .heading {
       font-size: 32px;
       font-weight: 400;
       line-height: 36px; /* 112.5% */
-
-    }
+    } // services > teaser > heading
 
     .copy {
       font-size: 22px;
       text-align: right;
-    }
-  }  
-}
+    } // services > teaser > copy
+  } // services > teaser
+} // services
 
 
 .service {
@@ -104,7 +98,7 @@
     display: grid;
     gap: 60px;
     grid-template-columns: 1fr;
-    padding-bottom: 250px;
+    padding-bottom: 120px;
 
     @media screen and (min-width: $breakpoint-desktop) {
       gap: 10%;
@@ -216,120 +210,170 @@
   }
 
   .aside {
-    @extend %page-width;
-    
-    display: grid;
-    gap: 4%;
-    grid-template-columns: 1fr;
+    min-height: 110px;
 
     @media screen and (min-width: $breakpoint-desktop) {
+      min-height: 115px;
+    } // service > aside @ $breakpoint-desktop
+
+    .container {
+      @extend %flex;
+      @extend %page-width;
+      
+      bottom: 0;
       gap: 4%;
-      grid-template-columns: 1fr 0.4fr;
-    }
-
-    @media screen and (min-width: $breakpoint-large-desktop) {
-      gap: 8%;
-    }
-
-    .nav {
-      bottom: 30px;
-      box-shadow: 
-        -6px -6px 12px 0px rgba(255, 255, 255, 0.30) inset, 
-        -2px -2px 8px 0px rgba(255, 255, 255, 0.25), 
-        2px 2px 10.4px 0px rgba(0, 0, 0, 0.05), 
-        3px 3px 9.1px 0px rgba(0, 0, 0, 0.08), 
-        -8px -8px 12px 0px rgba(255, 255, 255, 0.30), 
-        9px 9px 32px 0px rgba(0, 0, 0, 0.15), 
-        -1px -1px 2px 0px rgba(255, 255, 255, 0.15) inset, 
-        6px 6px 24px 0px rgba(0, 0, 0, 0.04) inset;
+      grid-template-columns: 1fr;
+      justify-content: center;
       left: 50%;
       padding: 0 15px;
       position: fixed;    
       transform: translateX(-50%);
-  
-      @media screen and (min-width: $breakpoint-desktop) {
+
+      &.fly {
+        bottom: 30px;
+
+        @media screen and (min-width: $breakpoint-desktop) {
+          width: calc(100% - 130px);
+        } // service > aside > container.fly @ $breakpoint-desktop
+
+        .shaded {
+          box-shadow: 
+            -6px -6px 12px 0px rgba(255, 255, 255, 0.30) inset, 
+            -2px -2px 8px 0px rgba(255, 255, 255, 0.25), 
+            2px 2px 10.4px 0px rgba(0, 0, 0, 0.05), 
+            3px 3px 9.1px 0px rgba(0, 0, 0, 0.08), 
+            -8px -8px 12px 0px rgba(255, 255, 255, 0.30), 
+            9px 9px 32px 0px rgba(0, 0, 0, 0.15), 
+            -1px -1px 2px 0px rgba(255, 255, 255, 0.15) inset, 
+            6px 6px 24px 0px rgba(0, 0, 0, 0.04) inset; 
+        }
+      } // service > aside > container.fly
+      
+
+      &.land {
         position: static;
         transform: translateX(0%);
-      }
-  
-      .links {
-        @extend %flex;
-  
-        gap: 10px;
-  
-        @media screen and (min-width: $breakpoint-desktop) {
-          gap: 24px;
-        }
-  
-        .link {
-          @extend %button;
-          @extend %flex;
-  
-          height: 60px;
-          justify-content: center;
-          gap: 10px;
-          width: 60px;
-          
-          .icon {
-            @extend %flex;
-            
-        
-            .vector {
-              fill: $color-gray-main;
-            }
-          }
-  
-          &:hover {
-            border: none;
-            background: $color-gray-1;
-            box-shadow: 
-              -3px -3px 8px 0px rgba(255, 255, 255, 0.70) inset, 
-              3px 3px 8px 0px rgba(0, 0, 0, 0.14) inset, 
-              3px 3px 8px 0px rgba(255, 255, 255, 0.70), 
-              -3px -3px 8px 0px rgba(0, 0, 0, 0.14);
-            height: 62px;
-            width: 62px;
-            transition: box-shadow 0.25s linear;
-          }
-  
-          &.active {
-            background: $color-red;
-            border-color: transparent;
-            box-shadow: 
-              -2px -2px 2px 0px rgba(255, 255, 255, 0.25) inset, 
-              3px 3px 3px 0px rgba(0, 0, 0, 0.25) inset;
-  
-            .vector {
-              fill: $color-gray-1; 
-            }
-          }
-        }
-      }
 
-      &.puffy {
-        justify-content: space-between; 
-      }
-    }
+        .shaded {
+          box-shadow: 
+            -12px -12px 32px 0px rgba(0, 0, 0, 0.14) inset, 
+            12px 12px 32px 0px rgba(255, 255, 255, 0.70) inset, 
+            12px 12px 32px 0px rgba(0, 0, 0, 0.14), 
+            -12px -12px 32px 0px rgba(255, 255, 255, 0.70);
+          }
+      } // service > aside > container.landed
 
-    .puffy {
-      @extend %flex;
-
-      border-radius: 50px;
-      background: $color-gray-1;
-      font-size: 24px;
-      
       @media screen and (min-width: $breakpoint-desktop) {
-        box-shadow: 
-          -12px -12px 32px 0px rgba(0, 0, 0, 0.14) inset, 
-          12px 12px 32px 0px rgba(255, 255, 255, 0.70) inset, 
-          12px 12px 32px 0px rgba(0, 0, 0, 0.14), 
-          -12px -12px 32px 0px rgba(255, 255, 255, 0.70);      
-        height: 110px;      
-        justify-content: center; 
-        padding: 0 60px 4px 60px;
+        display: grid;
+        gap: 4%;
+        grid-template-columns: 1fr 0.4fr;
       }
-    }
-  }
-}
+
+      @media screen and (min-width: $breakpoint-large-desktop) {
+        gap: 8%;
+      }
+
+      .nav {
+        padding: 0 30px;
+        
+        .landed & {
+          animation:  fadeIn 1s linear forwards;
+          box-shadow: none;
+          transition: width 0.5s linear;   
+
+          &::after {
+            @extend %after-box;
+
+            animation:  fadeIn 1s linear forwards;
+            border-radius: 50px;
+            padding: 0;
+          }
+        }
+    
+        .links {
+          @extend %flex;
+    
+          gap: 10px;
+    
+          @media screen and (min-width: $breakpoint-desktop) {
+            gap: 24px;
+          } // service > aside > container > nav > links @ $breakpoint-desktop
+    
+          .link {
+            @extend %button;
+            @extend %flex;
+    
+            height: 60px;
+            justify-content: center;
+            gap: 10px;
+            width: 60px;
+            z-index: 1;
+            
+            .icon {
+              @extend %flex;
+              
+              .vector {
+                fill: $color-gray-main;
+              }
+            } // service > aside > container > nav > links > link > icon
+    
+            &:hover {
+              @extend %hover-shadow;
+
+              border: none;
+              background: $color-gray-1;
+              height: 62px;
+              width: 62px;
+              transition: box-shadow 0.25s linear;
+            } // service > aside > container > nav > links > link:hover
+    
+            &.active {
+              background: $color-red;
+              border-color: transparent;
+              box-shadow: 
+                -2px -2px 2px 0px rgba(255, 255, 255, 0.25) inset, 
+                3px 3px 3px 0px rgba(0, 0, 0, 0.25) inset;
+    
+              .vector {
+                fill: $color-gray-1; 
+              }  // service > aside > container > nav > links > link.active > vector
+            } // service > aside > container > nav > links > link.active
+          } // service > aside > container > nav > links > link
+        } // service > aside > container > nav > links
+
+        &.shaded {
+          justify-content: space-between; 
+        } // service > aside > container > nav.puffy
+      } // service > aside > container > nav
+
+      .shaded {
+        @extend %flex;
+
+        background: $color-gray-1;
+        border-radius: 50px;
+        font-size: 24px;
+        
+        @media screen and (min-width: $breakpoint-desktop) {          
+          height: 110px;      
+          justify-content: center; 
+          padding: 0 60px 4px 60px;
+        } // service > aside > container > puffy @ $breakpoint-desktop
+
+        .fly & {
+          bottom: 30px;
+          box-shadow: 
+            -6px -6px 12px 0px rgba(255, 255, 255, 0.30) inset, 
+            -2px -2px 8px 0px rgba(255, 255, 255, 0.25), 
+            2px 2px 10.4px 0px rgba(0, 0, 0, 0.05), 
+            3px 3px 9.1px 0px rgba(0, 0, 0, 0.08), 
+            -8px -8px 12px 0px rgba(255, 255, 255, 0.30), 
+            9px 9px 32px 0px rgba(0, 0, 0, 0.15), 
+            -1px -1px 2px 0px rgba(255, 255, 255, 0.15) inset, 
+            6px 6px 24px 0px rgba(0, 0, 0, 0.04) inset;
+        } // service > aside > container > shaded < fly
+      } // service > aside > container > shaded
+    } // service > aside > container
+  } // service > aside
+} // service
 
 

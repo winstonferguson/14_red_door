@@ -194,11 +194,20 @@
         9px 9px 32px 0px rgba(0, 0, 0, 0.15), 
         -1px -1px 2px 0px rgba(255, 255, 255, 0.15) inset, 
         6px 6px 24px 0px rgba(0, 0, 0, 0.04) inset;
+      font-size: 24px;
       gap: 10px;
       height: 63px;
       justify-content: center;
       margin-top: 20px;
       width: 63px;
+
+      &:hover {
+        box-shadow: 
+          -3px -3px 8px 0px rgba(255, 255, 255, 0.70) inset, 
+          3px 3px 8px 0px rgba(0, 0, 0, 0.14) inset, 
+          3px 3px 8px 0px rgba(255, 255, 255, 0.70), 
+          -3px -3px 8px 0px rgba(0, 0, 0, 0.14);
+      }
 
       @media screen and (min-width: $breakpoint-tablet) {
         grid-column: 4;

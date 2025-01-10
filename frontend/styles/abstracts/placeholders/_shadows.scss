@@ -1,0 +1,17 @@
+@use "../variables" as *;
+
+%hover-shadow {
+  box-shadow: 
+    -3px -3px 8px 0px rgba(255, 255, 255, 0.70) inset, 
+    3px 3px 8px 0px rgba(0, 0, 0, 0.14) inset, 
+    3px 3px 8px 0px rgba(255, 255, 255, 0.70), 
+    -3px -3px 8px 0px rgba(0, 0, 0, 0.14);
+}
+
+%header-link-shadow {
+  box-shadow: 
+    -6px -6px 16px 0px rgba(0, 0, 0, 0.14) inset, 
+    6px 6px 16px 0px rgba(255, 255, 255, 0.70) inset, 
+    6px 6px 16px 0px rgba(0, 0, 0, 0.14), 
+    -6px -6px 16px 0px rgba(255, 255, 255, 0.70);
+}

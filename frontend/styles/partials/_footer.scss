@@ -82,6 +82,11 @@
 
         .link {
           font-size: 16px;
+
+          &:hover {
+            opacity: 0.5;
+            transition: opacity 0.3s;
+          }
         } // footer > nav > subnav > links > link
       } // footer > nav > subnav > links
     } // footer > nav > subnavs
