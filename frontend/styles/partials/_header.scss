@@ -2,6 +2,7 @@
 
 .header {
   @extend %flex;
+
   gap: 48px;
   justify-content: space-between;
   margin-bottom: 60px;
@@ -13,16 +14,15 @@
 
   nav {
     display: none;
+
     @media screen and (min-width: $breakpoint-tablet) {
       display: block;
     }
 
     ul {
-      display: flex;
+      @extend %flex;
+
       gap: 48px;
-      list-style: none;
-      margin: 0;
-      padding: 0;
 
       li {
         display: inline-block;        
@@ -36,10 +36,9 @@
 
   .mobile {
     justify-self: end;
+    padding-top: 0;
 
     .button {
-      @extend %header-link-shadow;
-
       -webkit-appearance: none;
       appearance: none;
       background-color: transparent;
@@ -52,11 +51,6 @@
     .nav {
       background: $color-gray-1;
       border-radius: 50px;
-      box-shadow: 
-        -12px -12px 32px 0px rgba(0, 0, 0, 0.14) inset, 
-        12px 12px 32px 0px rgba(255, 255, 255, 0.70) inset, 
-        12px 12px 32px 0px rgba(0, 0, 0, 0.14), 
-        -12px -12px 32px 0px rgba(255, 255, 255, 0.70);
       display: none;
       gap: 20px;
       grid-template-columns: repeat(2, 1fr);
@@ -65,6 +59,7 @@
       position: absolute;
       right: 50px;
       top: 50px;
+      width: calc(100% - 82px);
       z-index: 1;
 
       .button {
@@ -72,7 +67,14 @@
         box-shadow: unset;
         grid-column: 2;
         grid-row: 1;
-        justify-self: end
+        justify-self: end;
+
+        &.close {
+          position: absolute;
+          right: 35px;
+          top: 50px;
+          z-index: 9;
+        }
       }
 
       .links {
@@ -90,8 +92,30 @@
         }
       }
     }
+
+    .shaded {
+      @extend %header-link-shadow;
+    }
   }
-}
+
+  &.active-mobile-menu {
+
+    .mobile {
+      flex-grow: 1;
+      left: 0;
+      position: absolute;  
+      top: 0;
+      
+      > .button {
+        display: none;
+      } // header.active-mobile-menu .menu > .button
+
+      .nav {
+        display: block;
+      } // header.active-mobile-menu .menu .nav
+    } // header.active-mobile-menu .menu
+  } // header.active-mobile-menu
+} // header
 
 a.nav-link {
   @extend %flex;
@@ -110,6 +134,7 @@ a.nav-link {
     box-shadow: 
       -2px -2px 2px 0px rgba(255, 255, 255, 0.25) inset, 
       3px 3px 3px 0px rgba(0, 0, 0, 0.25) inset;
+    
   }
 
   &:not(.active) {

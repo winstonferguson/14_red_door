@@ -1,18 +1,29 @@
 @use "../abstracts" as *;
 
 .header {
+  height: 43px;
+  position: relative;
+  transition: height 0.25s ease-in-out;
+
+  .logo {
+    animation: fadeIn 0.25s ease-in-out forwards;
+  }
 
   .mobile {
-    .button {
-      box-shadow: none;
+    animation: fadeIn 0.25s ease-in-out forwards;
+
+    .shaded {
       position: relative;
+      box-shadow: none;
+      
   
       &::after {
         @extend %after-box;
         @extend %header-link-shadow;
   
-        animation: fadeIn 0.5s ease-in forwards;
+        animation: fadeIn 0.5s ease-in 0.75s forwards;
         border-radius: 50px;
+        opacity: 0;
         transition: box-shadow 0.5s linear;
       }
   
@@ -25,12 +36,24 @@
           animation: fadeOut 0.1s ease-in forwards;
         }
       }
+
+      &.nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
     }
 
   }
   
 
   .nav-link {
+
+    &.active {
+      animation: scaleUp 0.5s ease-in-out;
+      opacity: 1;
+    }
+
     &:not(.active) {
       box-shadow: none;
       position: relative;
@@ -42,7 +65,7 @@
         animation: fadeIn 0.5s ease-in forwards;
         border-radius: 50px;
         transition: box-shadow 0.5s linear;
-      } // header > nav-link::after
+      } // header .nav-link::after
 
       &:hover {
         @extend %hover-shadow;
@@ -52,11 +75,67 @@
         &::after {
           animation: fadeOut 0.1s ease-in forwards;
         }
-      } // header > nav-link::hover::after
+      } // .header .nav-link::hover::after
 
 
-    } // header > nav-link:not(.active)
+    } // .header .nav-link:not(.active)
     
+  } // .header .nav-link
+
+  .logo {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: left 0.5s ease-in-out 0s;
   }
 
+  &.active-mobile-menu {
+    height: 280px;
+    padding-top: 100px;
+    transition: height 0.5s ease-in-out;    
+
+    .close {
+      animation: fadeIn 0.5s ease-in 0.5s forwards;
+      opacity: 0;
+    }
+
+    .mobile {
+      animation: fadeIn 1s ease-in 0.5s forwards;
+      opacity: 0;
+      width: 100%;
+
+      > .button {
+        // animation: fadeOut 0.5s ease-in 0s forwards;
+        // display: block;
+        // opacity: 1;
+      }  
+    }
+
+    .logo {
+      // animation: fadeOut 0.25s ease-in 0s forwards;
+      // bottom: 50px;
+      display: block;
+      left: calc(100% - 110px);
+      position: absolute;
+      // right: 50px;
+      top: calc(100% - 200px);
+      // bottom: 50px;
+      transition: left 0.5s ease-in-out 0.85s, top 0.25s ease-in-out 0s;
+      width: 60px;
+      z-index: 2;
+    }
+
+    .link {
+      opacity: 0;
+      z-index: 9;
+
+      @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+          animation: fadeIn 0.5s ease-out forwards, scaleUp 0.25s ease-out forwards;
+          animation-delay: #{$i * 0.5}s;
+        }
+      }
+    }
+  }
 }
