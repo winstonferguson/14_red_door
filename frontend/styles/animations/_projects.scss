@@ -1,0 +1,95 @@
+@use "../abstracts" as *;
+
+.project {
+
+  p,
+  img {
+    animation: fadeIn 0.5s ease-out forwards;
+    opacity: 0;
+  }
+
+  .copy {
+    p {     
+      opacity: 0;
+
+      @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+          animation: fadeIn 0.5s ease-out forwards;
+          animation-delay: #{($i + 0.25) * 0.25}s;
+        }
+      } // staggered load effect
+    } // .project .copy p
+  } // .project .copy
+
+  .feature-image  {
+    animation: fadeIn 2s ease-out 0s forwards;
+    opacity: 0;
+  } // .project .feature-image
+
+  .tags {
+    .tag {     
+      opacity: 0;
+
+      @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+          animation: fadeIn 0.5s ease-out forwards;
+          animation-delay: #{($i + 0.25) * 0.25}s;
+        }
+      } // staggered load effect
+    } // .project .tags .tag
+  } // .project .tags
+
+  .title {
+    animation: fadeIn 2s ease-out 0s forwards;
+    opacity: 0;
+  }
+} // .project
+
+.projects {
+  .card {
+    opacity: 0;
+
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        animation: fadeIn 0.5s ease-out forwards;
+        animation-delay: #{$i * 0.25}s;
+      }
+    } // staggered load effect
+
+    .link {
+      box-shadow: none;
+      position: relative;
+      transition: box-shadow 0.5s linear;
+
+      &:hover {
+        box-shadow: 
+          -3px -3px 8px 0px rgba(255, 255, 255, 0.70) inset, 
+          3px 3px 8px 0px rgba(0, 0, 0, 0.14) inset, 
+          3px 3px 8px 0px rgba(255, 255, 255, 0.70), 
+          -3px -3px 8px 0px rgba(0, 0, 0, 0.14);
+        transition: box-shadow 0.5s linear;
+
+        &::after {
+          animation: fadeOut 0.1s ease-in forwards;
+        } // .projects .card .link:hover::after
+      } // .projects .card .link:hover
+
+      &::after {
+        @extend %after-box;
+
+        animation: fadeIn 1s ease-out 0.5s forwards;
+        border-radius: 100px;
+        box-shadow: 
+          -6px -6px 12px 0px rgba(255, 255, 255, 0.30) inset, 
+          -2px -2px 8px 0px rgba(255, 255, 255, 0.25), 
+          2px 2px 10.4px 0px rgba(0, 0, 0, 0.05), 
+          3px 3px 9.1px 0px rgba(0, 0, 0, 0.08), 
+          -8px -8px 12px 0px rgba(255, 255, 255, 0.30), 
+          9px 9px 32px 0px rgba(0, 0, 0, 0.15), 
+          -1px -1px 2px 0px rgba(255, 255, 255, 0.15) inset, 
+          6px 6px 24px 0px rgba(0, 0, 0, 0.04) inset;
+          opacity: 0;
+      } // .projects .card .link::after
+    } // .projects .card .link
+  } // .projects .card
+} // .projects

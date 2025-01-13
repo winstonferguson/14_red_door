@@ -2,7 +2,6 @@
 
 .services {
   .door {
-    
     box-shadow: none;
     opacity: 0;
     position: relative;
@@ -31,8 +30,8 @@
       
       @media screen and (min-width: $breakpoint-desktop) {
         border-radius: 34px;
-      } // door > after @$breakpoint-desktop
-    } // door > after
+      } // door &::after @$breakpoint-desktop
+    } // door &::after
 
     @for $i from 1 through 10 {
       &:nth-child(#{$i}) {
@@ -40,7 +39,7 @@
         animation-delay: #{$i * 0.25}s;
       }
     } // staggered load effect
-  } // services > door
+  } // services .door
 } // services
 
 .service {
@@ -53,7 +52,7 @@
       .vector {
         path {
           opacity: 0;
-        } // service > content > graphic > vector > path 
+        } // service .content .graphic .vector .path 
   
         @for $i from 1 through 200 {
           path:nth-child(#{$i}) {
@@ -61,10 +60,9 @@
             animation-delay: #{$i * 20}ms;
           }
         } // staggered load effect
-      } // service > content > graphic > vector
-    } // service > content > graphic
+      } // service .content .graphic .vector
+    } // service .content .graphic
     
-
     .button {
       opacity: 0;
 
@@ -74,18 +72,16 @@
           animation-delay: #{$i * 0.1}s;
         }
       } // staggered load effect
-    } // service > content > button   
-  } // service > content
+    } // service .content .button   
+  } // service .content
 
   .aside {
     .container {
       &.fly {
         .shaded {
           transition: box-shadow 0.5s linear;
-
-          
-        }
-      }
+        } // service .aside .container.fly .shaded
+      } // service .aside .container.fly
 
       &.land {
         .shaded {
@@ -104,27 +100,29 @@
               12px 12px 32px 0px rgba(0, 0, 0, 0.14), 
               -12px -12px 32px 0px rgba(255, 255, 255, 0.70);
             opacity: 0;
+          } // service .aside .container.land .shaded::after
+        } // service .aside .container.land .shaded
+      } // service .aside .container.land
 
-
-            
-          }
-        }
+      .link {
+        transition: border 0.5s linear, box-shadow 0.25s linear, height 0.25s linear, width 0.25s linear;
       }
-    }
+    } // service .aside .container
+
     .projects {
       animation: fadeIn 0.25s ease-out forwards;
-    } // service > aside > projects
-  } // service > aside
+    } // service .aside .projects
+  } // service .aside
 
   &.animate-out {
     .content {
       animation: fadeOut 0.25s ease-out forwards;
-    } // service > animate-out > content
+    } // service .animate-out .content
 
     .aside {
       .projects {
         animation: fadeOut 0.25s ease-out forwards;
-      } // service > animate-out > aside > projects
-    } // service > animate-out > aside
-  } // service > animate-out
+      } // service .animate-out .aside .projects
+    } // service .animate-out .aside
+  } // service .animate-out
 } // service

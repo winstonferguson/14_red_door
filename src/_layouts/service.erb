@@ -30,7 +30,7 @@ layout: default
         <% end %>
       </ul>
     </nav>
-    <a class="shaded desktop"><span class="projects">View our <%= resource.data.title %> projects</span></a>    
+    <a href="<%= relative_url "/projects?service=#{resource.data.title.downcase}" %>" class="shaded desktop"><span class="projects">View our <%= resource.data.title %> projects</span></a>    
   </div>
  
 </aside>

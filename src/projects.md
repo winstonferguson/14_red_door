@@ -4,11 +4,18 @@ title: Projects
 page_class: projects
 ---
 
-<div class="filter tablet">
+<div class="filter tablet" data-controller="filter">
   <h4 class="heading">categories</h4>
-  <span>all</span>
+    <div class="input">
+      <label>all</label>
+      <input type="radio" class="radio" value="all" name="service" checked>
+    </div>
+  
   <% collections.services.resources.each do |service| %>
-    <span><%= service.data.title %></span>
+    <div class="input">
+      <label><%= service.data.title %></label>
+      <input type="radio" class="radio" value="<%= service.data.title.downcase %>" name="service" />
+    </div>
   <% end %>
 </div>
 

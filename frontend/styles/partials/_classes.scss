@@ -36,6 +36,12 @@
   }
 }
 
+.hidden {
+  display: none !important;
+  height: 0;
+  opacity: 0;
+}
+
 .logo {
   height: 43px;
   width: 60px;

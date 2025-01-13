@@ -133,12 +133,16 @@
   .card {
     @extend %flex-column;
 
+    align-self: stretch;
     border-radius: 30px;
     border: 1px solid $color-gray-2;
     gap: 20px;
-    align-self: stretch;
+    height: auto;
+    opacity: 1;
     padding: 22px 18px;
     position: relative;
+    transition: height 0.25s, opacity 0.25s;
+    transition-behavior: allow-discrete;
 
     @media screen and (min-width: $breakpoint-tablet) {
       padding: 36px 43px;
@@ -282,6 +286,32 @@
       margin: 60px auto 12px auto;
       padding: 20px 60px;
     } // projects > filter @ $breakpoint-tablet
+
+    .input {
+      @extend %flex;
+
+      gap: 20px;
+    }
+
+    .radio {
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: $color-gray-1;
+      border: 1px solid $color-gray-main;
+      border-radius: 50px;
+      box-shadow: none;
+      height: 58px;
+      width: 58px;
+      transition: background-color 0.5s, border-color 0.25s, box-shadow 0.25s;
+
+      &:checked {
+        background-color: $color-red;
+        border-color: transparent;
+        box-shadow: -2px -2px 2px 0px rgba(255, 255, 255, 0.25) inset, 3px 3px 3px 0px rgba(0, 0, 0, 0.25) inset;
+        transition: background-color 0.5s, border-color 0.25s, box-shadow 0.25s;
+        
+      } // projects > filter > radio:checked
+    }
 
     .heading {
       font-weight: 400;

@@ -10,7 +10,7 @@ export default class extends Controller {
     const params = new URLSearchParams(this.url.search);
     window.scrollTo(0, params.get('y'));
 
-    window.history.replaceState(null, document.title, this.url.pathname); 
+    // window.history.replaceState(null, document.title, this.url.pathname); 
 
     this.links =  this.element.querySelectorAll('a');
     this.animateLinks();
