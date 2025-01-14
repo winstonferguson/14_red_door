@@ -10,7 +10,7 @@ page_class: home
   </div>
   <div class="intro">
     <h1 class="title">Creative House</h1>
-    <p class="copy">At 14 red door, we open doors to solutions in visual and spatial practices.</p>
+    <p class="copy">At 14 red door, we open doors to solutions<br>in visual and spatial practices.</p>
   </div>
   <div class="prelude">
     <div class="row">
@@ -26,11 +26,16 @@ page_class: home
         </a>
       </div>
     </div>
-    <div class="row">
+    <div class="row fields">
       <div class="copy">
-        <p>14 red door is a creative house building in 4 fields:</p>
+        <p>14 red door is a creative house building in 3 fields:</p>
       </div>
       <div class="links">
+        <% collections.services.resources.each do |service| %>
+          <a class="link" href="<%= service.relative_url %>">
+            <%= service.data.title %>
+          </a>
+        <% end %>
       </div>
     </div>
   </div>

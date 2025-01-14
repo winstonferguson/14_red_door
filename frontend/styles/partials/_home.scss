@@ -69,6 +69,13 @@
           padding: 60px;
         } // home > content > prelude > row @ $breakpoint-tablet
 
+        &.fields {
+          @media screen and (min-width: $breakpoint-tablet) {
+            align-items: center;
+          }
+
+        }
+
         .copy {
           @extend %flex-column;
           gap: 1rem;
@@ -84,6 +91,33 @@
 
         .links {
           align-self: end;
+          margin-top: 1rem;
+
+          @media screen and (min-width: $breakpoint-desktop) {
+            align-self: center;
+            margin-top: 0;
+          }
+
+          .link {
+            font-size: 32px;
+            margin: 0 0.5rem 0 0;
+            position: relative;
+
+            &:not(:last-of-type) {
+              &::after {
+                @extend %after-box;
+
+                background-color: $color-gray-main;
+                left: auto;
+                margin: 0 0.5rem 0 0;
+                position: absolute;
+                right: -0.5rem;
+                width: 1px;
+
+              }
+            }
+
+          }
         } // home > content > prelude > row > links
       } // home > content > prelude > row
     } // home > content > prelude

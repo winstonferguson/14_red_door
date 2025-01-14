@@ -7,8 +7,8 @@ export default class extends Controller {
 
     // this.checkPosition();
 
-    const params = new URLSearchParams(this.url.search);
-    window.scrollTo(0, params.get('y'));
+    // const params = new URLSearchParams(this.url.search);
+    // window.scrollTo(0, params.get('y'));
 
     // window.history.replaceState(null, document.title, this.url.pathname); 
 
@@ -29,9 +29,9 @@ export default class extends Controller {
         setTimeout(() => {
           let url = link.href;
 
-          if (this.element.classList.contains('service') && link.classList.contains('icon')) {
-            url += `?y=${window.scrollY}`
-          }
+          // if (this.element.classList.contains('service') && link.classList.contains('icon')) {
+          //   url += `?y=${window.scrollY}`
+          // }
           window.location.href = url;
         }, 350);
       });

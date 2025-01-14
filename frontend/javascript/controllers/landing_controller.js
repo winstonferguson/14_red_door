@@ -35,7 +35,7 @@ export default class extends Controller {
   }
 
   land(scrollPosition) {
-    if (scrollPosition > this.landingPosition) {
+    if ((scrollPosition - 110) > this.landingPosition) {
       this.element.classList.add("land");
       this.element.classList.remove("fly");
     } else {
