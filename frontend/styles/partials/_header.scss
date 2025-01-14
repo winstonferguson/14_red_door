@@ -13,7 +13,7 @@
   }
 
   nav {
-    display: none;
+    // display: none;
 
     @media screen and (min-width: $breakpoint-tablet) {
       display: block;
@@ -58,9 +58,10 @@
       padding: 37px 41px;
       position: absolute;
       right: 50px;
+      transition-behavior: allow-discrete;
       top: 50px;
       width: calc(100% - 82px);
-      z-index: 1;
+
 
       .button {
         background-color: transparent;
@@ -107,7 +108,7 @@
       top: 0;
       
       > .button {
-        display: none;
+        // display: none;
       } // header.active-mobile-menu .menu > .button
 
       .nav {

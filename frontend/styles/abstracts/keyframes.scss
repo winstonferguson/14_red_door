@@ -16,6 +16,21 @@
   }
 }
 
+@keyframes fadeOutIn {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes scaleDown{
   from {
     transform: scale(100%);
