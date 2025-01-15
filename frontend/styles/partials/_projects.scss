@@ -205,14 +205,6 @@
       margin-top: 20px;
       width: 63px;
 
-      &:hover {
-        box-shadow: 
-          -3px -3px 8px 0px rgba(255, 255, 255, 0.70) inset, 
-          3px 3px 8px 0px rgba(0, 0, 0, 0.14) inset, 
-          3px 3px 8px 0px rgba(255, 255, 255, 0.70), 
-          -3px -3px 8px 0px rgba(0, 0, 0, 0.14);
-      }
-
       @media screen and (min-width: $breakpoint-tablet) {
         grid-column: 4;
         grid-row: 2;
@@ -221,6 +213,18 @@
         padding: 28px;
         width: auto;        
       } // projects > card > link @ $breakpoint-tablet
+
+      &:hover {
+        box-shadow: 
+          -3px -3px 8px 0px rgba(255, 255, 255, 0.70) inset, 
+          3px 3px 8px 0px rgba(0, 0, 0, 0.14) inset, 
+          3px 3px 8px 0px rgba(255, 255, 255, 0.70), 
+          -3px -3px 8px 0px rgba(0, 0, 0, 0.14);
+      } // projects > card > link:hover
+
+      .vector {
+        width: 9px;
+      } // projects > card > link > vector
     } // projects > card > link
 
     .services {
@@ -272,7 +276,6 @@
     display: none;
 
     @media screen and (min-width: $breakpoint-tablet) {
-      background: $color-gray-1;
       border-radius: 46px;
       box-shadow: 
         -12px -12px 32px 0px rgba(0, 0, 0, 0.14) inset, 

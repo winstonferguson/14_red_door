@@ -3,17 +3,17 @@ layout: default
 page_class: home
 ---
 
-<div class="content">
+<div class="content" data-controller="observer">
   <div class="topography">  
     <%= svg "/images/topography-left.svg" %>
     <%= svg "/images/topography-right.svg" %>
   </div>
-  <div class="intro">
+  <div class="intro observe">
     <h1 class="title">Creative House</h1>
-    <p class="copy">At 14 red door, we open doors to solutions<br>in visual and spatial practices.</p>
+    <p class="copy">At 14 red door, we open doors to solutions<span>in visual and spatial practices.</span></p>
   </div>
   <div class="prelude">
-    <div class="row">
+    <div class="row observe">
       <div class="copy">
         <p>Inspired by forgotten memories, 14 Red Door explores limitless creativity in visual and spatial realms.</p>
         <p>We open doors to the unseen, undefined, and extraordinary.</p>
@@ -26,7 +26,7 @@ page_class: home
         </a>
       </div>
     </div>
-    <div class="row fields">
+    <div class="row fields observe">
       <div class="copy">
         <p>14 red door is a creative house building in 3 fields:</p>
       </div>
@@ -39,9 +39,8 @@ page_class: home
       </div>
     </div>
   </div>
-  <div id="services" class="services"> 
+  <div id="services" class="services observe"> 
     <h3 class="heading center">explore our services:</h3>
-
     <ul class="links">
       <% collections.services.resources.each do |service| %>
       <li class="link">
@@ -52,7 +51,7 @@ page_class: home
     <% end %>
     </ul>
   </div>
-  <div id="projects" class="projects"> 
+  <div id="projects" class="projects observe"> 
     <h3 class="heading center">view some of our projects:</h3>
     <ul class="items">
       <% collections.projects.resources.sort_by{ |p| p.data.position }[0..1].each do |project| %>
@@ -71,6 +70,14 @@ page_class: home
         </a>
       </li>
     </ul>
+  </div>
+  <div class="cta">
+    <a class="link" href="<%= relative_url '/contact' %>">
+      ready to work?
+      <span class="device">
+        <%= svg "/images/link-arrow.svg" %>
+      </span>
+    </a>
   </div>
   
 </div>

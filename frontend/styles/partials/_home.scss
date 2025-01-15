@@ -2,126 +2,165 @@
 
 .home {
   .copy {
-    font-size: 32px;
-  } // home > copy
+    font-size: 24px;
 
-  .heading {
-    font-size: 2rem;
-    font-weight: 400;
-    margin-bottom: 4rem;
-  } // home > heading
+    @media screen and (min-width: $breakpoint-tablet) {
+      font-size: 32px;
+    }
+  } // .home .copy
 
   .content {
     padding: 60px 0;
 
     @media screen and (min-width: $breakpoint-tablet) {
       padding: 120px 0;
-    } // home > content > @ $breakpoint-tablet
+    } // .home .content .@ $breakpoint-tablet
 
-    .intro {
-      @extend %flex-column;
+    .heading {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 4rem;
+    } // .home .content .heading
+  } // .home .content
 
-      gap: 1rem;
-      padding: 0 36px;
+  .cta {
+    @extend %flex;
 
-      
-      @media screen and (min-width: $breakpoint-tablet) {
-        align-items: flex-end;
-        gap: 32px;
-        margin-top: 120px;
+    justify-content: center;
+    margin: 35vh 0 5vh 0;
 
-        > * {
-          width: 60%;
-        }
-      } // home > content > intro @ $breakpoint-tablet
-    } // home > content > intro
+    .link {
+      @extend %flex;
 
-    .prelude {
-      @extend %flex-column;
+      border: 1px solid black;
+      border-radius: 100px;
+      font-size: 1.5rem;      
+      gap: 4rem;
+      padding: 1.5rem 3rem;
 
-      align-items: center;
-      gap: 35vh;
-      margin-top: 35vh;
+      .device {
+        @extend %flex;
 
-      @media screen and (min-width: $breakpoint-tablet) {
-        gap: 36vw;
-        
-        margin: 36vw auto 18vw auto;
-      } // home > content > prelude @ $breakpoint-tablet
-
-      .row {
-        @extend %flex-column;
-
-        backdrop-filter: blur(14px);
-        background: rgba(232, 232, 232, 0.25);
-        border: 3px solid var(--background, #E8E8E8);
-        border-radius: 36px;
+        border-radius: 50px;
         box-shadow: 
-          0px 30px 64px 0px rgba(149, 149, 149, 0.10), 
-          0px 1px 2px 0px rgba(80, 73, 73, 0.15) inset;
-        gap: 1rem;
-        padding: 36px;
+        -6px -6px 12px 0px rgba(255, 255, 255, 0.30) inset, 
+        -2px -2px 8px 0px rgba(255, 255, 255, 0.25), 
+        2px 2px 10.4px 0px rgba(0, 0, 0, 0.05), 
+        3px 3px 9.1px 0px rgba(0, 0, 0, 0.08), 
+        -8px -8px 12px 0px rgba(255, 255, 255, 0.30), 
+        9px 9px 32px 0px rgba(0, 0, 0, 0.15), 
+        -1px -1px 2px 0px rgba(255, 255, 255, 0.15) inset, 
+        6px 6px 24px 0px rgba(0, 0, 0, 0.04) inset;
+        height: 50px;
+        justify-content: center;
+        padding: 1rem;
+        width: 50px;
 
-        @media screen and (min-width: $breakpoint-tablet) {
-          border-radius: 60px;
-          flex-direction: row;
-          justify-content: space-between;
-          padding: 60px;
-        } // home > content > prelude > row @ $breakpoint-tablet
-
-        &.fields {
-          @media screen and (min-width: $breakpoint-tablet) {
-            align-items: center;
-          }
-
+        .vector {
+          width: 20px;
         }
+      }      
+    }
+  } // .home .cta
 
-        .copy {
-          @extend %flex-column;
-          gap: 1rem;
+  .intro {
+    @extend %flex-column;
 
-          @media screen and (min-width: $breakpoint-tablet) {
-            gap: 2rem;
-          } // home > content > prelude > row > copy @ $breakpoint-tablet
+    gap: 1rem;
+    padding: 0 36px;
+    
+    @media screen and (min-width: $breakpoint-tablet) {
+      align-items: flex-end;
+      gap: 32px;
+      margin-top: 120px;
 
-          @media screen and (min-width: $breakpoint-desktop) {
-            max-width: 38%;
-          } // home > content > prelude > row > copy @ $breakpoint-desktop
-        } // home > content > prelude > row > copy
+      > * {
+        width: 60%;
+      }
+    } // .home .intro @ $breakpoint-tablet
+  } // .home .intro
 
-        .links {
-          align-self: end;
-          margin-top: 1rem;
+  .prelude {
+    @extend %flex-column;
 
-          @media screen and (min-width: $breakpoint-desktop) {
+    align-items: center;
+    gap: 35vh;
+    margin-top: 35vh;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      gap: 36vw;
+      margin: 36vw auto 18vw auto;
+    } // .home .content .prelude @ $breakpoint-tablet
+
+    .row {
+      @extend %flex-column;
+
+      backdrop-filter: blur(14px);
+      background: rgba(232, 232, 232, 0.25);
+      border: 3px solid var(--background, #E8E8E8);
+      border-radius: 36px;
+      box-shadow: 
+        0px 30px 64px 0px rgba(149, 149, 149, 0.10), 
+        0px 1px 2px 0px rgba(80, 73, 73, 0.15) inset;
+      gap: 1rem;
+      padding: 36px;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        border-radius: 60px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 60px;
+      } // .home .content .prelude .row @ $breakpoint-tablet
+
+      &.fields {
+        @media screen and (min-width: $breakpoint-tablet) {
+          align-items: center;
+
+          .links {
             align-self: center;
             margin-top: 0;
           }
+        }
+      }
 
-          .link {
-            font-size: 32px;
-            margin: 0 0.5rem 0 0;
-            position: relative;
+      .copy {
+        @extend %flex-column;
+        gap: 1rem;
 
-            &:not(:last-of-type) {
-              &::after {
-                @extend %after-box;
+        @media screen and (min-width: $breakpoint-tablet) {
+          gap: 2rem;
+        } // .home .content .prelude .row .copy @ $breakpoint-tablet
 
-                background-color: $color-gray-main;
-                left: auto;
-                margin: 0 0.5rem 0 0;
-                position: absolute;
-                right: -0.5rem;
-                width: 1px;
+        @media screen and (min-width: $breakpoint-desktop) {
+          max-width: 38%;
+        } // .home .content .prelude .row .copy @ $breakpoint-desktop
+      } // .home .content .prelude .row .copy
 
-              }
-            }
+      .links {
+        align-self: end;
+        margin-top: 1rem;
 
-          }
-        } // home > content > prelude > row > links
-      } // home > content > prelude > row
-    } // home > content > prelude
-  } // home > content
+        .link {
+          font-size: 32px;
+          margin: 0 0.5rem 0 0;
+          position: relative;
+
+          &:not(:last-of-type) {
+            &::after {
+              @extend %after-box;
+
+              background-color: $color-gray-main;
+              left: auto;
+              margin: 0 0.5rem 0 0;
+              position: absolute;
+              right: -0.5rem;
+              width: 1px;
+            } // .home .prelude .row .links .link::after
+          } // .home .prelude .row .links .link:not(:last-of-type)
+        } // .home .prelude .row .links .link
+      } // .home .prelude .row .links
+    } // .home .prelude .row
+  } // .home .prelude
   
   .services {
     margin: 35vh 0;
@@ -140,7 +179,7 @@
 
       @media screen and (min-width: $breakpoint-tablet) {
         flex-direction: row;
-      } // home > services > links @ $breakpoint-tablet
+      } // .home .services .links @ $breakpoint-tablet
 
       .link {
         @extend %flex;
@@ -164,7 +203,7 @@
         @media screen and (min-width: $breakpoint-tablet) {
           height: 360px;
           width:  230px;
-        } // home > services > links > link @ $breakpoint-tablet
+        } // .home .services .links .link @ $breakpoint-tablet
 
         &:hover {
           border: none;
@@ -173,16 +212,14 @@
             12px 12px 32px 0px rgba(0, 0, 0, 0.14) inset, 
             12px 12px 32px 0px rgba(255, 255, 255, 0.70), 
             -12px -12px 32px 0px rgba(0, 0, 0, 0.14);
-        } // home > services > links > link:hover
+        } // .home .services .links .link:hover
 
         .vector {
           width: 100px;
-        } // home > services > links > link > vector
-      } // home > services > links > link
-    } // home > services > links
-  } //  home > services
-
-
+        } // .home .services .links .link .vector
+      } // .home .services .links .link
+    } // .home .services .links
+  } //  .home .services
 
   .topography {
     left: 0;
@@ -199,26 +236,25 @@
 
     &-left {
       left: 0;
-      top: 20vh;
+      top: 60vh;
       transform: translate(-60%, 0);
 
       @media screen and (min-width: $breakpoint-tablet) {
         top: 0;
-
         transform: translate(-50%, 0);
-      } // home > topography > topography-left @ $breakpoint-tablet
-    }  // home > topography > topography-left
+      } // .home .topography .topography-left @ $breakpoint-tablet
+    }  // .home .topography .topography-left
 
     &-right {
       right: 0;
-      top: 80vh;
+      top: 20vh;
       transform: translate(60%, 0);
 
       @media screen and (min-width: $breakpoint-tablet) {
         top: 250px;
         transform: translate(50%, 0);
-      } // home > topography > topography-right @ $breakpoint-tablet
-    } // home > topography > topography-right
+      } // .home .topography .topography-right @ $breakpoint-tablet
+    } // .home .topography .topography-right
 
     .device {
       height: 100vh;
@@ -227,7 +263,7 @@
 
       @media screen and (min-width: $breakpoint-tablet) {
         height: auto;
-      } // home > topography > device @ $breakpoint-tablet
-    }  // home > topography > device 
-  } // home > topography 
-} // home
+      } // .home .topography .device @ $breakpoint-tablet
+    }  // .home .topography .device 
+  } // .home .topography 
+} // .home

@@ -48,3 +48,33 @@
     transform: scale(100%);
   }
 }
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+
+@keyframes topo {
+  0% {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+  }
+  50% {
+    stroke-dasharray: 4;
+    stroke-dashoffset: 4;
+    stroke-width: 1;
+  }
+  100% {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+
+  }
+}
+

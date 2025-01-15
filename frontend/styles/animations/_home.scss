@@ -1,0 +1,86 @@
+@use "../abstracts" as *;
+
+.home {
+  .intro {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+
+    &.visible {
+      animation: fadeIn 2s ease-out 0.25s forwards;
+    }
+
+  }
+
+  .row {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+
+    &.visible {
+      animation: fadeIn 2s ease-out 0s forwards;
+    }
+  }
+
+  .projects {
+    &.visible {
+      .item {
+        opacity: 0;
+        
+  
+        @for $i from 1 through 10 {
+          &:nth-child(#{$i}) {
+            animation: fadeIn 1s ease-out forwards;
+            opacity: 0;
+            animation-delay: #{$i * 0.25}s;
+          }
+        }
+      }
+    }
+  }
+
+  .services {
+    &.visible {
+      .link {
+        opacity: 0;
+        
+  
+        @for $i from 1 through 10 {
+          &:nth-child(#{$i}) {
+            animation: fadeIn 1s ease-out forwards;
+            opacity: 0;
+            animation-delay: #{$i * 0.25}s;
+          }
+        }
+      }
+    }
+  }
+
+  .visible {
+    &.topography {
+      &-left {
+        path {
+          opacity: 0;
+  
+          @for $i from 1 through 10 {
+            &:nth-child(#{$i}) {
+              animation: fadeIn 1s ease-out forwards;
+              animation-delay: #{$i * 0.25}s;
+            }
+          }
+        }
+      }
+  
+      &-right {
+        path {
+          opacity: 0;
+  
+          @for $i from 1 through 10 {
+            &:nth-child(#{$i}) {
+              animation: fadeIn 1s ease-out forwards;
+              animation-delay: #{$i * 0.45}s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

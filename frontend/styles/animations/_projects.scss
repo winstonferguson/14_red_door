@@ -92,4 +92,38 @@
       } // .projects .card .link::after
     } // .projects .card .link
   } // .projects .card
+
+  .filter {
+    animation: fadeIn 1s ease-out 0s forwards;
+    box-shadow: none;
+    position: relative;
+
+    > * {
+      opacity: 0;
+
+      @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+          animation: fadeIn 0.5s ease-out forwards;
+          animation-delay: #{$i * 0.25}s;
+        }
+      } // staggered load effect
+    } // .projects .filter > *
+
+    &::after {
+      @extend %after-box;
+      
+      animation: fadeIn 1s ease-out 1.5s forwards;
+      border-radius: 46px;
+      box-shadow: 
+        -12px -12px 32px 0px rgba(0, 0, 0, 0.14) inset, 
+        12px 12px 32px 0px rgba(255, 255, 255, 0.70) inset, 
+        12px 12px 32px 0px rgba(0, 0, 0, 0.14), 
+        -12px -12px 32px 0px rgba(255, 255, 255, 0.70);
+      opacity: 0;
+    } // .projects .filter::after
+
+    .input {
+      z-index: 1;
+    }
+  } // .projects .filter
 } // .projects
