@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="topographyRight" class="topography-right device observe" data-controller="observer" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 904 1271">
+<svg id="topographyRight" class="topography-right device observe" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 904 1271">
   <defs>
     <style>
     @keyframes fade-in {
