@@ -7,6 +7,13 @@
     @media screen and (min-width: $breakpoint-tablet) {
       font-size: 32px;
     }
+
+    .span {
+      @media screen and (min-width: $breakpoint-desktop) {
+        display: block;
+      }
+
+    }
   } // .home .copy
 
   .content {
@@ -105,7 +112,7 @@
       gap: 1rem;
       padding: 36px;
 
-      @media screen and (min-width: $breakpoint-tablet) {
+      @media screen and (min-width: $breakpoint-desktop) {
         border-radius: 60px;
         flex-direction: row;
         justify-content: space-between;
@@ -113,7 +120,7 @@
       } // .home .content .prelude .row @ $breakpoint-tablet
 
       &.fields {
-        @media screen and (min-width: $breakpoint-tablet) {
+        @media screen and (min-width: $breakpoint-desktop) {
           align-items: center;
 
           .links {

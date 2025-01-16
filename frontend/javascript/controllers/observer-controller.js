@@ -1,29 +1,20 @@
 import { Controller } from "@hotwired/stimulus"
+import { useIntersection } from 'stimulus-use'
 
 export default class extends Controller {
   connect() {
-    const myElements = document.querySelectorAll('.observe');
-    const options = {
-      root: null,
-      threshold: 0,
-      rootMargin: "0px",
-    }
-
-    
-
-    for (const element of myElements) {
-      const observer = new IntersectionObserver((entries) => {
-        const [entry] = entries;
-        console.log(entry);
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        } else {
-          entry.target.classList.remove("visible");
-        }
-      }, options);
-      
-      observer.observe(element);
-    }
+    useIntersection(this)
   }
 
+  appear(entry, observer) {
+    // callback automatically triggered when the element
+    // intersects with the viewport (or root Element specified in the options)
+    this.element.classList.add("visible");
+  }
+
+  disappear(entry, observer) {
+    // callback automatically triggered when the element
+    // leaves the viewport (or root Element specified in the options)
+    this.element.classList.remove("visible");
+  }
 }

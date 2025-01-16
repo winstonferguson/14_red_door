@@ -23,6 +23,7 @@
     "@hotwired/turbo": "^8.0.10",
     "greensock": "^1.20.2",
     "locomotive-scroll": "^4.1.4",
+    "stimulus-use": "^0.52.3",
     "turbo-shadow": "^1.2.0"
   }
 }
