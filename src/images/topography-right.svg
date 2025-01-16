@@ -7,12 +7,11 @@
 
         .st0 {
           <!-- animate: fade-in 3s linear; -->
-          <!-- stroke: #000000; -->
-          stroke-width: 0;
+          stroke: #000000;
+          stroke-width: 1;
           fill: #E8E8E8;
           filter: url(#filter0_dddddiii_328_548);
-          opacity: 1;
-          box-shadow: 
+          <!-- box-shadow: 
             -6px -6px 12px 0px rgba(255, 255, 255, 0.30) inset, 
             -1px -1px 2px 0px rgba(255, 255, 255, 0.15) inset, 
             6px 6px 24px 0px rgba(0, 0, 0, 0.04) inset;  
@@ -21,7 +20,7 @@
             drop-shadow(-8px -8px 12px rgba(255, 255, 255, 0.30))
             drop-shadow(3px 3px 9.1px rgba(0, 0, 0, 0.08))
             drop-shadow(2px 2px 10.4px rgba(0, 0, 0, 0.05))
-            drop-shadow(-2px -2px 8px rgba(255, 255, 255, 0.25));
+            drop-shadow(-2px -2px 8px rgba(255, 255, 255, 0.25)); -->
 
 
         }
