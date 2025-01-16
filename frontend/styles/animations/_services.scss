@@ -64,19 +64,20 @@
     animation: fade-in 0.25s ease-out;
 
     .graphic {
-      animation: fade-in 0.5s ease-out;
 
       .vector {
-        path {
+        .path {
           opacity: 0;
+
+          @for $i from 1 through 100 {
+            &:nth-child(#{$i}) {
+              animation: fade-in 10ms ease-out forwards;
+              animation-delay: #{$i * 20}ms;
+            }
+          } // staggered load effect
         } // service .content .graphic .vector .path 
   
-        @for $i from 1 through 100 {
-          path:nth-child(#{$i}) {
-            animation: fade-in 10ms ease-out forwards;
-            animation-delay: #{$i * 20}ms;
-          }
-        } // staggered load effect
+        
       } // service .content .graphic .vector
     } // service .content .graphic
     
