@@ -64,10 +64,13 @@
     animation: fade-in 0.25s ease-out;
 
     .graphic {
-
       .vector {
+        position: relative;
+
         .path {
           opacity: 0;
+          position: relative;
+          transform: translate(0px,0px);
 
           @for $i from 1 through 100 {
             &:nth-child(#{$i}) {
