@@ -15,9 +15,8 @@
 
         .st0 {
           animate: fade-in 3s linear;
-          filter: url(#filter0_dddddiii_328_548);  
           stroke: #000000;
-          stroke-width: 0;
+          stroke-width: 1;
           fill: #E8E8E8;
           opacity: 1;
           <!-- box-shadow: 
