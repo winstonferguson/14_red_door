@@ -167,17 +167,17 @@
       z-index: 9;
 
       &:nth-child(1) {
-        animation: fadeIn 0.25s ease-out 1s forwards, scaleUp 0.5s ease-out 1s forwards;
+        animation: fade-in 0.25s ease-out 1s forwards, scale-up 0.5s ease-out 1s forwards;
         // animation-delay: #{$i * 0.75}s;
       }
 
       &:nth-child(2) {
-        animation: fadeIn 0.25s ease-out 1.25s forwards, scaleUp 0.5s ease-out 1.25s forwards;
+        animation: fade-in 0.25s ease-out 1.25s forwards, scale-up 0.5s ease-out 1.25s forwards;
         // animation-delay: #{$i * 0.75}s;
       }
 
       &:nth-child(3) {
-        animation: fadeIn 0.25s ease-out 1.5s forwards, scaleUp 0.5s ease-out 1.5s forwards;
+        animation: fade-in 0.25s ease-out 1.5s forwards, scale-up 0.5s ease-out 1.5s forwards;
         // animation-delay: #{$i * 0.75}s;
       }
 
