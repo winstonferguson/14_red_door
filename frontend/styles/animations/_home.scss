@@ -6,7 +6,7 @@
     transition: opacity 0.5s ease-out;
 
     &.visible {
-      animation: fadeIn 2s ease-out 0.25s forwards;
+      animation: fade-in 2s ease-out 0.25s forwards;
     }
 
   }
@@ -16,7 +16,7 @@
     transition: opacity 0.5s ease-out;
 
     &.visible {
-      animation: fadeIn 2s ease-out 0s forwards;
+      animation: fade-in 2s ease-out 0s forwards;
     }
   }
 
@@ -28,7 +28,7 @@
   
         @for $i from 1 through 10 {
           &:nth-child(#{$i}) {
-            animation: fadeIn 1s ease-out forwards;
+            animation: fade-in 1s ease-out forwards;
             opacity: 0;
             animation-delay: #{$i * 0.25}s;
           }
@@ -48,18 +48,18 @@
         &:after {
           @extend %after-box;
           
-          -webkit-animation: fadeIn 1s ease-out forwards;
-          animation: fadeIn 1s ease-out forwards;
+          -webkit-animation: fade-in 1s ease-out forwards;
+          animation: fade-in 1s ease-out forwards;
           border-radius: 150px;
           box-shadow: 
-          -6px -6px 12px 0px rgba(255, 255, 255, 0.30) inset, 
-          -2px -2px 8px 0px rgba(255, 255, 255, 0.25), 
-          2px 2px 10.4px 0px rgba(0, 0, 0, 0.05), 
-          3px 3px 9.1px 0px rgba(0, 0, 0, 0.08), 
-          -8px -8px 12px 0px rgba(255, 255, 255, 0.30), 
-          9px 9px 32px 0px rgba(0, 0, 0, 0.15), 
-          -1px -1px 2px 0px rgba(255, 255, 255, 0.15) inset, 
-          6px 6px 24px 0px rgba(0, 0, 0, 0.04) inset;
+            -6px -6px 12px 0px rgba(255, 255, 255, 0.30) inset, 
+            -2px -2px 8px 0px rgba(255, 255, 255, 0.25), 
+            2px 2px 10.4px 0px rgba(0, 0, 0, 0.05), 
+            3px 3px 9.1px 0px rgba(0, 0, 0, 0.08), 
+            -8px -8px 12px 0px rgba(255, 255, 255, 0.30), 
+            9px 9px 32px 0px rgba(0, 0, 0, 0.15), 
+            -1px -1px 2px 0px rgba(255, 255, 255, 0.15) inset, 
+            6px 6px 24px 0px rgba(0, 0, 0, 0.04) inset;
         }
   
         &:hover {
@@ -68,7 +68,7 @@
   
         @for $i from 1 through 10 {
           &:nth-child(#{$i}) {
-            animation: fadeIn 1s ease-out forwards;
+            animation: fade-in 1s ease-out forwards;
             opacity: 0;
             animation-delay: #{$i * 0.25}s;
           }
@@ -85,7 +85,7 @@
   
           @for $i from 1 through 10 {
             &:nth-child(#{$i}) {
-              animation: fadeIn 1s ease-out forwards;
+              animation: fade-in 1s ease-out forwards;
               animation-delay: #{$i * 0.25}s;
             }
           }
@@ -98,7 +98,7 @@
   
           @for $i from 1 through 10 {
             &:nth-child(#{$i}) {
-              animation: fadeIn 1s ease-out forwards;
+              animation: fade-in 1s ease-out forwards;
               animation-delay: #{$i * 0.45}s;
             }
           }
