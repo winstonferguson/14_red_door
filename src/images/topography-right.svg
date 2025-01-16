@@ -2,22 +2,14 @@
 <svg id="topographyRight" class="topography-right device observe" data-controller="observer" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 904 1271">
   <defs>
     <style>
-    @keyframes fade-in {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-
       
 
         .st0 {
-          animate: fade-in 3s linear;
-          stroke: #000000;
-          stroke-width: 1;
+          <!-- animate: fade-in 3s linear; -->
+          <!-- stroke: #000000; -->
+          stroke-width: 0;
           fill: #E8E8E8;
+          filter: url(#filter0_dddddiii_328_548);
           opacity: 1;
           <!-- box-shadow: 
           -6px -6px 12px 0px rgba(255, 255, 255, 0.30) inset, 
