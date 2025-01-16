@@ -142,7 +142,6 @@
       }
       50% {
         opacity: 0;
-        transform: translate(calc(100% - 110px), calc(100% - 218px));
       }
       100% {
         opacity: 1;
@@ -151,14 +150,14 @@
 
     .logo {
       animation: logo-mobile-move 2s ease-in 0s forwards;
-      // bottom: 50px;
+      bottom: 50px;
       display: block;
-      // left: calc(100% - 110px);
+      left: calc(100% - 110px);
       position: absolute;
       // right: 50px;
-      // top: calc(100% - 218px);
+      top: calc(100% - 218px);
       // bottom: 50px;
-      // transition: left 0s ease-in-out 0.5s, top 0s ease-in-out 0.5s;
+      transition: left 0s ease-in-out 0.5s, top 0s ease-in-out 0.5s;
       width: 60px;
       z-index: 2;
     }
