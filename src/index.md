@@ -39,12 +39,12 @@ page_class: home
       </div>
     </div>
   </div>
-  <div id="services" class="services observe" data-controller="observer"> 
+  <div id="services" class="services observe"> 
     <h3 class="heading center">explore our services:</h3>
     <ul class="links">
       <% collections.services.resources.each do |service| %>
-      <li class="link">
-        <a href="<%= service.relative_url %>" data-controller="observer">
+      <li class="link" data-controller="observer">
+        <a href="<%= service.relative_url %>">
           <%= svg "/images/#{ service.data.image }" %>
         </a>
       </li>
@@ -55,7 +55,7 @@ page_class: home
     <h3 class="heading center">view some of our projects:</h3>
     <ul class="items">
       <% collections.projects.resources.sort_by{ |p| p.data.position }[0..1].each do |project| %>
-      <li class="item" >
+      <li class="item" data-controller="observer">
         <a class="link" href="<%= project.relative_url %>">
           <span class="title"><%= project.data.title %></span>
           <div class="image" style="background-image: url('<%= relative_url responsive_image_path(project.data.image_directory + '/feature.png', width: 640) %>')">
