@@ -3,7 +3,7 @@ layout: default
 page_class: home
 ---
 
-<div class="content" data-controller="observer">
+<div class="content">
   <div class="topography">  
     <%= svg "/images/topography-left.svg" %>
     <%= svg "/images/topography-right.svg" %>

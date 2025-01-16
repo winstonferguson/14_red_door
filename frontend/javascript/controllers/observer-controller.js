@@ -3,13 +3,11 @@ import { useIntersection } from 'stimulus-use'
 
 export default class extends Controller {
   connect() {
-    this.elements = this.element.querySelectorAll(".observe");
+    // this.elements = this.element.querySelectorAll(".observe");
 
+    // console.log(this.elements);
     useIntersection(this)
-
-    for (const element of this.elements) {
-      useIntersection(element);
-    }
+    
   }
 
   appear(entry, observer) {
