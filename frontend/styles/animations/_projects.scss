@@ -1,10 +1,15 @@
 @use "../abstracts" as *;
 
 .project {
+  p {
+    animation: fade-in 0.5s ease-out 0.75s forwards;
+    opacity: 0;
 
-  p,
-  img {
-    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  img,
+  video {
+    animation: fade-in 2s ease-out 1s forwards;
     opacity: 0;
   }
 
@@ -14,7 +19,7 @@
 
       @for $i from 1 through 10 {
         &:nth-child(#{$i}) {
-          animation: fadeIn 0.5s ease-out forwards;
+          animation: fade-in 0.5s ease-out forwards;
           animation-delay: #{($i + 0.25) * 0.25}s;
         }
       } // staggered load effect
@@ -22,7 +27,7 @@
   } // .project .copy
 
   .feature-image  {
-    animation: fadeIn 2s ease-out 0s forwards;
+    animation: fade-in 0.5s ease-out 0.5s forwards;
     opacity: 0;
   } // .project .feature-image
 
@@ -32,7 +37,7 @@
 
       @for $i from 1 through 10 {
         &:nth-child(#{$i}) {
-          animation: fadeIn 0.5s ease-out forwards;
+          animation: fade-in 0.5s ease-out forwards;
           animation-delay: #{($i + 0.25) * 0.25}s;
         }
       } // staggered load effect
@@ -40,7 +45,7 @@
   } // .project .tags
 
   .title {
-    animation: fadeIn 2s ease-out 0s forwards;
+    animation: fade-in 2s ease-out 0s forwards;
     opacity: 0;
   }
 } // .project
@@ -51,7 +56,7 @@
 
     @for $i from 1 through 10 {
       &:nth-child(#{$i}) {
-        animation: fadeIn 0.5s ease-out forwards;
+        animation: fade-in 0.5s ease-out forwards;
         animation-delay: #{$i * 0.25}s;
       }
     } // staggered load effect
@@ -70,14 +75,14 @@
         transition: box-shadow 0.5s linear;
 
         &::after {
-          animation: fadeOut 0.1s ease-in forwards;
+          animation: fade-out 0.1s ease-in forwards;
         } // .projects .card .link:hover::after
       } // .projects .card .link:hover
 
       &::after {
         @extend %after-box;
 
-        animation: fadeIn 1s ease-out 0.5s forwards;
+        animation: fade-in 1s ease-out 0.5s forwards;
         border-radius: 100px;
         box-shadow: 
           -6px -6px 12px 0px rgba(255, 255, 255, 0.30) inset, 
@@ -94,7 +99,7 @@
   } // .projects .card
 
   .filter {
-    animation: fadeIn 1s ease-out 0s forwards;
+    animation: fade-in 1s ease-out 0s forwards;
     box-shadow: none;
     position: relative;
 
@@ -103,8 +108,8 @@
 
       @for $i from 1 through 10 {
         &:nth-child(#{$i}) {
-          animation: fadeIn 0.5s ease-out forwards;
-          animation-delay: #{$i * 0.25}s;
+          animation: fade-in 0.25s ease-out forwards;
+          animation-delay: #{$i * 0.15}s;
         }
       } // staggered load effect
     } // .projects .filter > *
@@ -112,7 +117,7 @@
     &::after {
       @extend %after-box;
       
-      animation: fadeIn 1s ease-out 1.5s forwards;
+      animation: fade-in 1s ease-out 1s forwards;
       border-radius: 46px;
       box-shadow: 
         -12px -12px 32px 0px rgba(0, 0, 0, 0.14) inset, 

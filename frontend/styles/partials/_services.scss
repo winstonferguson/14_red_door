@@ -16,6 +16,7 @@
     @media screen and (min-width: $breakpoint-desktop) {
       gap: 60px;
       grid-template-columns: 1fr 1fr 1fr;
+      min-height: 40vh;
       padding: 90px;  
     } // services > content @ $breakpoint-desktop
   } // services > content
@@ -41,9 +42,11 @@
     width: 100%;
 
     @media screen and (min-width: $breakpoint-desktop) {
+      align-self: center;
       border-radius: 34px;
       font-size: 32px;
-      height: 32vw;
+      height: 40vw;
+      width: 25vw;
       max-width: 330px;
       max-height: 650px;
     } // services > door @ $breakpoint-desktop
@@ -57,13 +60,11 @@
     } // services > door &:nth-of-type(3)
 
     &:hover {
-      background: $color-gray-1;
       box-shadow: 
         inset -12px -12px 32px 0px rgba(255, 255, 255, 0.70), 
         inset 12px 12px 32px 0px rgba(0, 0, 0, 0.14), 
         12px 12px 32px 0px rgba(255, 255, 255, 0.70), 
         -12px -12px 32px 0px rgba(0, 0, 0, 0.14);
-      transition: box-shadow 0.25s linear;
     } // services > door &:hover
   } // services > door
 
