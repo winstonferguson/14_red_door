@@ -58,10 +58,10 @@
 
 .service {
   .content {
-    animation: fadeIn 0.25s ease-out;
+    // animation: fadeIn 0.25s ease-out;
 
     .graphic {
-      animation: fadeIn 0.5s ease-out;
+      // animation: fadeIn 0.5s ease-out;
 
       .vector {
         path {
@@ -70,8 +70,10 @@
   
         @for $i from 1 through 200 {
           path:nth-child(#{$i}) {
-            animation: fadeIn 10ms ease-out forwards;
             animation-delay: #{$i * 20}ms;
+            animation-duration: 10ms;            
+            animation-fill-mode: forwards;
+            animation-name: fadeIn;
           }
         } // staggered load effect
       } // service .content .graphic .vector

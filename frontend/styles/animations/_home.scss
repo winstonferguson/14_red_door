@@ -48,6 +48,7 @@
         &:after {
           @extend %after-box;
           
+          -webkit-animation: fadeIn 1s ease-out forwards;
           animation: fadeIn 1s ease-out forwards;
           border-radius: 150px;
           box-shadow: 
