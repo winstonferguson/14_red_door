@@ -2,6 +2,7 @@
 <svg id="topographyRight" class="topography-right device observe" data-controller="observer" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 904 1271">
   <defs>
     <style>
+
       
 
         .st0 {
@@ -11,16 +12,16 @@
           fill: #E8E8E8;
           filter: url(#filter0_dddddiii_328_548);
           opacity: 1;
-          <!-- box-shadow: 
-          -6px -6px 12px 0px rgba(255, 255, 255, 0.30) inset, 
-          -1px -1px 2px 0px rgba(255, 255, 255, 0.15) inset, 
-          6px 6px 24px 0px rgba(0, 0, 0, 0.04) inset;  -->
-          <!-- filter:
+          box-shadow: 
+            -6px -6px 12px 0px rgba(255, 255, 255, 0.30) inset, 
+            -1px -1px 2px 0px rgba(255, 255, 255, 0.15) inset, 
+            6px 6px 24px 0px rgba(0, 0, 0, 0.04) inset;  
+          filter:
             drop-shadow(9px 9px 32px rgba(0, 0, 0, 0.15))
             drop-shadow(-8px -8px 12px rgba(255, 255, 255, 0.30))
             drop-shadow(3px 3px 9.1px rgba(0, 0, 0, 0.08))
             drop-shadow(2px 2px 10.4px rgba(0, 0, 0, 0.05))
-            drop-shadow(-2px -2px 8px rgba(255, 255, 255, 0.25)); -->
+            drop-shadow(-2px -2px 8px rgba(255, 255, 255, 0.25));
 
 
         }
