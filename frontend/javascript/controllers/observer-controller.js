@@ -6,7 +6,7 @@ export default class extends Controller {
     // this.elements = this.element.querySelectorAll(".observe");
 
     // console.log(this.elements);
-    useIntersection(this)
+    // useIntersection(this)
     
   }
 
