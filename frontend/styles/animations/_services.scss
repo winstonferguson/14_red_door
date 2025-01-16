@@ -65,13 +65,10 @@
 
     .graphic {
       .vector {
-        position: relative;
 
         .path {
           opacity: 0;
-          position: relative;
-          transform: translate(0px,0px);
-
+          
           @for $i from 1 through 100 {
             &:nth-child(#{$i}) {
               animation: fade-in 10ms ease-out forwards;
