@@ -8,6 +8,7 @@
 body {
   background: $color-gray-1;
   color: $color-gray-main;
+  cursor: url(/14_red_door/images/pointer.svg), url(/14_red_door/images/pointer.png), auto;
   font-family: neue-haas-unica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -24,6 +25,7 @@ body {
 
 a {
   color: $color-gray-main;
+  cursor: url(/14_red_door/images/hand.svg), url(/14_red_door/images/hand.png), auto;
   text-decoration: none;
 }
 
