@@ -25,7 +25,7 @@ layout: default
       <ul class="links">
         <% collections.services.resources.each do |service|  %>
           <li class="link <%= resource == service ? 'active': '' %>">
-            <a class="icon" href="<%= service.relative_url %>"><%= svg "/images/#{ service.data.icon }" %></a>
+            <a class="icon" href="<%= service.relative_url %>" data-turbo-preload="true" ><%= svg "/images/#{ service.data.icon }" %></a>
           </li>
         <% end %>
       </ul>
