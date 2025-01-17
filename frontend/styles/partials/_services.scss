@@ -308,7 +308,8 @@
           .link {
             @extend %button;
             @extend %flex;
-    
+
+            cursor: url(/14_red_door/images/hand.svg), url(/14_red_door/images/hand.png), auto;    
             height: 60px;
             justify-content: center;
             gap: 10px;
