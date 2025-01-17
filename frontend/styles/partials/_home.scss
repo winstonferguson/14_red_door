@@ -246,6 +246,17 @@
       left: 0;
       top: 60vh;
       transform: translate(-60%, 0);
+      
+      
+      opacity: 1;
+
+      .path {
+        stroke: none;
+      stroke-width: 0;
+        fill: #E8E8E8;
+      filter: url(#inwards);
+
+      }
 
       @media screen and (min-width: $breakpoint-tablet) {
         top: 0;
