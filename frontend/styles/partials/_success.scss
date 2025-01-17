@@ -1,0 +1,41 @@
+@use "../abstracts" as *;
+
+.success {
+  .content {
+    > * {
+
+      opacity: 0;
+    
+        @for $i from 1 through 2 {
+          &:nth-child(#{$i}) {
+            animation: fade-in 1s ease-out forwards;
+            animation-delay: #{$i * 0.25}s;
+          }
+        }
+    }
+  }  
+
+  .intro {
+    @extend %flex-column;
+
+    min-height: 30vh;
+
+    gap: 16px;
+
+    .title {
+      font-size: 32px;
+    }
+
+  }
+
+  .projects {
+    margin-top: 4rem;
+    .heading {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 4rem;
+    }
+  }
+
+  
+}

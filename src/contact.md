@@ -12,7 +12,7 @@ page_class: contact
       <a href="tel:+447469949205">+44 7469 949205</a>
     </div>
   </div>
-  <form action="" method="post" class="form">
+  <form action="" method="post" class="form" data-controller="form" data-form-id-value="YN8jR1d">
     <div class="group">
       <label class="label">what is your name?</label>
       <input class="input" type="text" name="name" placeholder="my name is..." />
@@ -25,30 +25,32 @@ page_class: contact
       <label class="label">attach file(s)</label>
       <input class="input" type="file" name="files" multiple="true" accept="application/pdf, image/png, image/jpeg" />
     </div>
-    <div class="group--services">
+    <div class="group services">
       <span class="label">which of these interest you?</span>
-      <div class="service">
-        <input class="input" type="checkbox" id="2d" name="2d" value="2d" />
-        <label class="button" for="2d">
-        2d
-        </label>
-      </div>
-      <div class="service">
-        <input class="input" type="checkbox" id="3d" name="3d" value="3d" />
-        <label class="button" for="3d">
-        3d
-        </label>
-      </div>
-      <div class="service">
-        <input class="input" type="checkbox" id="web" name="web" value="web" />
-        <label class="button" for="web">
-        web
-        </label>
+      <div class="services">
+        <div class="service">
+          <input class="input" type="checkbox" id="2d" name="2d" value="2d" />
+          <label class="button" for="2d">
+          2d
+          </label>
+        </div>
+        <div class="service">
+          <input class="input" type="checkbox" id="3d" name="3d" value="3d" />
+          <label class="button" for="3d">
+          3d
+          </label>
+        </div>
+        <div class="service">
+          <input class="input" type="checkbox" id="web" name="web" value="web" />
+          <label class="button" for="web">
+          web
+          </label>
+        </div>
       </div>
     </div>
     <div class="group">
       <label class="label">please describe your project:</label>
-      <textarea class="text-area" name="name" placeholder="my idea is..."></textarea>
+      <textarea class="text-area" name="description" placeholder="my idea is..."></textarea>
     </div>
     <input class="label submit" type="submit">
   </form>

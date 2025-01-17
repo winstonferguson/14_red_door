@@ -55,16 +55,36 @@
         }
       }
 
-      &--services {
+      &.services {
         @extend %flex-column;
         // align-self: stretch;
         // display: grid;
         // grid-template-columns: repeat(1fr);
         gap: 10px;
 
+        .services {
+          @extend %flex-column;
+
+          height: 100%;
+          gap: 10px;
+
+          @media screen and (min-width: $breakpoint-tablet) {
+            align-items: stretch;
+            flex-direction: row;
+            gap: 32px;
+            justify-content: center;
+          }
+        }
+
+
         .service {
-          margin: 5px;
           width: 100%;
+          
+
+          @media screen and (min-width: $breakpoint-tablet) {
+            height: 100%;
+            max-width: 120px;
+          }
         }
 
         @media screen and (min-width: $breakpoint-tablet) {
@@ -82,7 +102,6 @@
 
           &:checked + label {
             border: none;
-            background: $color-gray-1;
             box-shadow: -3px -3px 8px 0px rgba(255, 255, 255, 0.70) inset, 3px 3px 8px 0px rgba(0, 0, 0, 0.14) inset, 3px 3px 8px 0px rgba(255, 255, 255, 0.70), -3px -3px 8px 0px rgba(0, 0, 0, 0.14);
             height: 57px;   
             
@@ -95,6 +114,8 @@
         .button {
           @extend %flex;
           @extend %button;
+
+          box-shadow: none;
         
           font-size: 20px;
           height: 56px;
@@ -142,6 +163,8 @@
     @extend %flex;
 
     justify-content: space-between;
+    gap: 10px;
+    width: 100%;
 
     @media screen and (min-width: $breakpoint-tablet) {
       gap: 100px;
