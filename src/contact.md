@@ -12,14 +12,14 @@ page_class: contact
       <a href="tel:+447469949205">+44 7469 949205</a>
     </div>
   </div>
-  <form action="" method="post" class="form" data-controller="form" data-form-id-value="YN8jR1d">
+  <form action="" enctype="multipart/form-data" class="form" data-controller="form" data-form-id-value="YN8jR1d">
     <div class="group">
       <label class="label">what is your name?</label>
-      <input class="input" type="text" name="name" placeholder="my name is..." />
+      <input class="input" type="text" name="name" placeholder="my name is..."  required />
     </div>
     <div class="group">
       <label class="label">what is your email?</label>
-      <input class="input" type="email" name="email" placeholder="my email is..." />
+      <input class="input" type="email" name="email" placeholder="my email is..." required />
     </div>
     <div class="group">
       <label class="label">attach file(s)</label>
@@ -50,7 +50,7 @@ page_class: contact
     </div>
     <div class="group">
       <label class="label">please describe your project:</label>
-      <textarea class="text-area" name="description" placeholder="my idea is..."></textarea>
+      <textarea class="text-area" name="description" placeholder="my idea is..." required></textarea>
     </div>
     <input class="label submit" type="submit">
   </form>
