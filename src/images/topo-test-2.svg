@@ -1,0 +1,156 @@
+<svg id="topographyLeft" class="topography-left device" version="1.1" viewBox="0 0 904 1271" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="filter6170" x="-.011137" y="-.0071687" width="1.0223" height="1.0143" color-interpolation-filters="sRGB">
+   <feMorphology in="SourceAlpha" operator="dilate" radius="3.6000000000000001" result="result1"/>
+   <feGaussianBlur in="result1" result="result0" stdDeviation="3.6"/>
+   <feDiffuseLighting surfaceScale="-5">
+    <feDistantLight azimuth="225" elevation="45"/>
+   </feDiffuseLighting>
+   <feComposite in2="result0" operator="in" result="result91"/>
+   <feComposite in="SourceGraphic" in2="result91"/>
+  </filter>
+  <filter id="filter6184" x="-.011642" y="-.0077224" width="1.0233" height="1.0154" color-interpolation-filters="sRGB">
+   <feMorphology in="SourceAlpha" operator="dilate" radius="3.6" result="result1"/>
+   <feGaussianBlur in="result1" result="result0" stdDeviation="3.6"/>
+   <feDiffuseLighting surfaceScale="-5">
+    <feDistantLight azimuth="225" elevation="45"/>
+   </feDiffuseLighting>
+   <feComposite in2="result0" operator="in" result="result91"/>
+   <feComposite in="SourceGraphic" in2="result91"/>
+  </filter>
+  <filter id="filter6198" x="-.012359" y="-.0083233" width="1.0247" height="1.0166" color-interpolation-filters="sRGB">
+   <feMorphology in="SourceAlpha" operator="dilate" radius="3.6" result="result1"/>
+   <feGaussianBlur in="result1" result="result0" stdDeviation="3.6"/>
+   <feDiffuseLighting surfaceScale="-5">
+    <feDistantLight azimuth="225" elevation="45"/>
+   </feDiffuseLighting>
+   <feComposite in2="result0" operator="in" result="result91"/>
+   <feComposite in="SourceGraphic" in2="result91"/>
+  </filter>
+  <filter id="filter6212" x="-.013324" y="-.0089227" width="1.0266" height="1.0178" color-interpolation-filters="sRGB">
+   <feMorphology in="SourceAlpha" operator="dilate" radius="3.6" result="result1"/>
+   <feGaussianBlur in="result1" result="result0" stdDeviation="3.6"/>
+   <feDiffuseLighting surfaceScale="-5">
+    <feDistantLight azimuth="225" elevation="45"/>
+   </feDiffuseLighting>
+   <feComposite in2="result0" operator="in" result="result91"/>
+   <feComposite in="SourceGraphic" in2="result91"/>
+  </filter>
+  <filter id="filter6226" x="-.012971" y="-.0094778" width="1.0259" height="1.019" color-interpolation-filters="sRGB">
+   <feMorphology in="SourceAlpha" operator="dilate" radius="3.6" result="result1"/>
+   <feGaussianBlur in="result1" result="result0" stdDeviation="3.6"/>
+   <feDiffuseLighting surfaceScale="-5">
+    <feDistantLight azimuth="225" elevation="45"/>
+   </feDiffuseLighting>
+   <feComposite in2="result0" operator="in" result="result91"/>
+   <feComposite in="SourceGraphic" in2="result91"/>
+  </filter>
+  <filter id="filter6240" x="-.01253" y="-.010742" width="1.0251" height="1.0215" color-interpolation-filters="sRGB">
+   <feMorphology in="SourceAlpha" operator="dilate" radius="3.6" result="result1"/>
+   <feGaussianBlur in="result1" result="result0" stdDeviation="3.6"/>
+   <feDiffuseLighting surfaceScale="-5">
+    <feDistantLight azimuth="225" elevation="45"/>
+   </feDiffuseLighting>
+   <feComposite in2="result0" operator="in" result="result91"/>
+   <feComposite in="SourceGraphic" in2="result91"/>
+  </filter>
+  <filter id="filter6254" x="-.015831" y="-.012065" width="1.0317" height="1.0241" color-interpolation-filters="sRGB">
+   <feMorphology in="SourceAlpha" operator="dilate" radius="3.6" result="result1"/>
+   <feGaussianBlur in="result1" result="result0" stdDeviation="3.6"/>
+   <feDiffuseLighting surfaceScale="-5">
+    <feDistantLight azimuth="225" elevation="45"/>
+   </feDiffuseLighting>
+   <feComposite in2="result0" operator="in" result="result91"/>
+   <feComposite in="SourceGraphic" in2="result91"/>
+  </filter>
+  <filter id="filter6268" x="-.033767" y="-.052947" width="1.0675" height="1.1059" color-interpolation-filters="sRGB">
+   <feMorphology in="SourceAlpha" operator="dilate" radius="3.6" result="result1"/>
+   <feGaussianBlur in="result1" result="result0" stdDeviation="3.6"/>
+   <feDiffuseLighting surfaceScale="-5">
+    <feDistantLight azimuth="225" elevation="45"/>
+   </feDiffuseLighting>
+   <feComposite in2="result0" operator="in" result="result91"/>
+   <feComposite in="SourceGraphic" in2="result91"/>
+  </filter>
+  <filter id="filter6282" x="-.016468" y="-.01614" width="1.0329" height="1.0323" color-interpolation-filters="sRGB">
+   <feMorphology in="SourceAlpha" operator="dilate" radius="3.6" result="result1"/>
+   <feGaussianBlur in="result1" result="result0" stdDeviation="3.6"/>
+   <feDiffuseLighting surfaceScale="-5">
+    <feDistantLight azimuth="225" elevation="45"/>
+   </feDiffuseLighting>
+   <feComposite in2="result0" operator="in" result="result91"/>
+   <feComposite in="SourceGraphic" in2="result91"/>
+  </filter>
+  <filter id="filter6296" x="-.041488" y="-.054885" width="1.083" height="1.1098" color-interpolation-filters="sRGB">
+   <feMorphology in="SourceAlpha" operator="dilate" radius="3.6" result="result1"/>
+   <feGaussianBlur in="result1" result="result0" stdDeviation="3.6"/>
+   <feDiffuseLighting surfaceScale="-5">
+    <feDistantLight azimuth="225" elevation="45"/>
+   </feDiffuseLighting>
+   <feComposite in2="result0" operator="in" result="result91"/>
+   <feComposite in="SourceGraphic" in2="result91"/>
+  </filter>
+  <filter id="filter6310" x="-.018645" y="-.018678" width="1.0373" height="1.0374" color-interpolation-filters="sRGB">
+   <feMorphology in="SourceAlpha" operator="dilate" radius="3.6" result="result1"/>
+   <feGaussianBlur in="result1" result="result0" stdDeviation="3.6"/>
+   <feDiffuseLighting surfaceScale="-5">
+    <feDistantLight azimuth="225" elevation="45"/>
+   </feDiffuseLighting>
+   <feComposite in2="result0" operator="in" result="result91"/>
+   <feComposite in="SourceGraphic" in2="result91"/>
+  </filter>
+  <filter id="filter6324" x="-.022645" y="-.021731" width="1.0453" height="1.0435" color-interpolation-filters="sRGB">
+   <feMorphology in="SourceAlpha" operator="dilate" radius="3.6" result="result1"/>
+   <feGaussianBlur in="result1" result="result0" stdDeviation="3.6"/>
+   <feDiffuseLighting surfaceScale="-5">
+    <feDistantLight azimuth="225" elevation="45"/>
+   </feDiffuseLighting>
+   <feComposite in2="result0" operator="in" result="result91"/>
+   <feComposite in="SourceGraphic" in2="result91"/>
+  </filter>
+  <filter id="filter6338" x="-.025586" y="-.02894" width="1.0512" height="1.0579" color-interpolation-filters="sRGB">
+   <feMorphology in="SourceAlpha" operator="dilate" radius="3.6" result="result1"/>
+   <feGaussianBlur in="result1" result="result0" stdDeviation="3.6"/>
+   <feDiffuseLighting surfaceScale="-5">
+    <feDistantLight azimuth="225" elevation="45"/>
+   </feDiffuseLighting>
+   <feComposite in2="result0" operator="in" result="result91"/>
+   <feComposite in="SourceGraphic" in2="result91"/>
+  </filter>
+  <filter id="filter6352" x="-.055299" y="-.0361" width="1.1106" height="1.0722" color-interpolation-filters="sRGB">
+   <feMorphology in="SourceAlpha" operator="dilate" radius="3.6" result="result1"/>
+   <feGaussianBlur in="result1" result="result0" stdDeviation="3.6"/>
+   <feDiffuseLighting surfaceScale="-5">
+    <feDistantLight azimuth="225" elevation="45"/>
+   </feDiffuseLighting>
+   <feComposite in2="result0" operator="in" result="result91"/>
+   <feComposite in="SourceGraphic" in2="result91"/>
+  </filter>
+  <filter id="filter6366" x="-.067157" y="-.05112" width="1.1343" height="1.1022" color-interpolation-filters="sRGB">
+   <feMorphology in="SourceAlpha" operator="dilate" radius="3.6" result="result1"/>
+   <feGaussianBlur in="result1" result="result0" stdDeviation="3.6"/>
+   <feDiffuseLighting surfaceScale="-5">
+    <feDistantLight azimuth="225" elevation="45"/>
+   </feDiffuseLighting>
+   <feComposite in2="result0" operator="in" result="result91"/>
+   <feComposite in="SourceGraphic" in2="result91"/>
+  </filter>
+ </defs>
+ <g fill="#e8e8e8">
+  <path class="st0" d="m453.4 38.1c35.8 3.3 259.6 117.3 283.2 131.8 40.3 365 92.2 883.6 63.9 913.6s-187.7 160.9-213.4 150.9c-15.3-6-8.5-21.7-35.8-10.3-34.1 14.2-45.8 5.6-34.7-22.2 11-27.8-0.3-38.3 5.4-67.6 5.6-29.3-7.8-50.2-18-51.3-18.9-2.2-23.2 4.5-35.4 2.5s-52.2-42.8-89.8-12.2c-113.7 92.7-103-22.7-93.7-61.7 7.4-31.2-0.7-50.6 3.5-94.5 0-33.6-24.1-68.4-102.9-62.9-67.9 4.7-85.1-35.3-78.4-55.6 6.9-20.9 14.5-67.1 13-89-2.1-29.7 7.5-50.3-37.5-41.4-39.2 7.7-38.4-36.5-32.7-55 5-32.1 10.2-28-7.3-56.8-18.5-30.4-6.8-56.5-1.2-65.8 10.7-16.2 38.1-60 61.9-105.2 29.7-56.6 22-76 20.7-82.5-6.5-30.8-36.7-41.1-11.4-73.6 20.3-26.1 12.2-29.8-7.4-50.6-15.1-16-38.3-46.1 17.8-68.5 34.9-13.9 80.7-28.1 97.6-40.9 13.1-12.4 44.8-34.9 67-25.1 27.8 12.3 89.1-11 104.3-13.9 15.2-3 43.2 6.3 61.6 8z" filter="url(#filter6170)"/>
+  <path class="st0" d="m485.8 92.2c27.8 7.8 64.3 16.7 90.5 17.8l175.5-8.6 62.7 897.2c-15.7 17.3-159.2 112.6-169 155.5-12.2 53.7-44.1 14.7-66.3 26.9s-42.4-29-27.2-73.2c12.2-35.3-23-42.3-53.2-52.4-49.8-11.1-35.9-22.4-81.8-19.2-76.7 5.4-103.2 31-90.2-56.6 7.1-47.9-6.5-95.1-34-118.7-28.5-24.4-36.1-25.3-84.5-37.7-71.1-18.2-63.8-55.5-58.2-83.6l0.2-0.8c9.3-47.1 9.9-73-15.4-85.6-42.5-21.1-51.7-36.2-47.9-52.7 2.8-11.8 0.6-12.1-6.2-28.8-18.1-44.1-3.3-73.4 8.5-100.2 13.6-31 55.9-85.7 68.6-120.6 11.8-32.3-7.6-55.5-6.6-94.5 3.6-35.5 19-22.6 7.1-53.3-18.4-47.4-18.2-49.8-4.2-59.9 42.5-30.8 79.7-18 114.4-51.5 11.9-11.5 99.4-10.7 127.1-24.2 25-12.2 63 17.2 90.1 24.7z" filter="url(#filter6184)"/>
+  <path class="st0" d="M442.4,114.3c56.1,13.7,91.5,25.4,120.8,21.8l132.6-9.3,115.4,984.8c-53.1,10.9-162.8,36.6-191.9,34.1-42.7-3.8-52.3,5-42.5-42s-3.5-35.2-19-58.3c-18.2-27.2-22.8-12.6-52.3-22-53.6-20.1-45.5-17.9-69.6-22.6-42-8.3-56.5,11.3-71.5-36.3-14.7-46.6-12.9-83.9-47.1-121-37.2-40.2-107.8-45.5-124.7-77-15.6-29.2-2.4-75-13.3-103.6-8-21-42.4-26.5-50-55.7-8.8-33.8,0,0-13.4-53-11.3-44.5,3.8-78.4,28.6-117.3,23.3-36.6,55.4-47.9,52.5-88.5-2.1-29.5-11.7-68-3.3-93.3,2-5.9,3-18.6.8-28.9-9.7-46.1,7.9-67,31-76,12.5-4.8,38.7.5,57.4-19.1,12-21.9,103.4-30.3,159.6-16.7Z" filter="url(#filter6198)"/>
+  <path class="st0" d="m445.9 155.5c30.6 6.8 87.1 2.3 111.5-0.8l172.3-7.4 53.4 951.5c-22.8 3.9-70.8 11.7-80.2 11.6-11.8 0-87.8 3.4-98.3-24.7-8-21.5-18.7-39-36.3-61.9-18.2-23.6-59.7-25-80.1-27.8-20.4-2.7-78.9-11.2-96.9-32.2-17.9-21-16.9-25.7-16.9-73.9s-64-80.8-79.5-85.8c-15.4-5-11.2-5.2-53.2-26.9-33.6-17.3-39.3-64.2-38-85.5 0-15.8-4.2-49.9-21.2-60.2-21.1-12.9-35.6-44.3-46.2-88.6-10.6-44.2 32.4-102.9 52.1-117.3 15.8-11.5 28.5-63.5 32.9-88.1 2.2-16.2 4.9-58.1-1.5-95.9s-1.6-50 28.4-72.5c41.6-17.7 57.1-0.8 68-16.8 13.7-20 91.4-5.5 129.7 3z" filter="url(#filter6212)"/>
+  <path class="st0" d="m405.9 177.3c40 3.4 104.8-0.7 157.5-3.6l5.2-0.4 189.3-6.3 79.4 886.7-216.3 24.9c-5.3-8.8-18.3-33.2-27.8-61.1-11.9-34.9-60.9-34.5-79.2-35.7-34.1-2.3-6.8-3.2-48.5-6.3s-73.5-41.7-75.9-75.8c-1.3-19.1 5-36.1-16.7-71.2-21.8-35.1-31.5-27.6-65.3-38.1-29.4-9.1-40.3-10.2-72.2-49.2-21.9-26.8 3.6-42.9-14.1-86.7-16.4-40.6-4 3.1-31.9-46-38.6-67.8-6.7-136.2 12.8-160.4 32.1-39.8 25.1-44.4 35.5-78.5 3.8-21.8 10.5-45.7 8.9-94.8-1.5-46.7 21.8-62.9 61.6-78.7 33.1-13.1 65.1-21.5 97.8-18.7z" filter="url(#filter6226)"/>
+  <path class="st0" d="M428.8,255c14.6-24.5,109.4-31.6,154.9-34l5.6-.4,165.4-11.6,129.1,721.3c-79.8,37.3-241.1,104.7-248,76.2-8.6-35.6-86.1-52.9-131.5-49.7-45.5,3.2-94.9-24-98-68.3-2.7-38.3,16.5-75-46.4-104.3-53.5-25-63.1-13.7-99.4-47.8-21.7-20.4-4.7-66.9-6-85.4-2.3-33.2-15.4-18.4-32-40.4-23.9-31.7-28.8-69.9-28.2-93.1,1-33.5,38.3-99.1,57.4-94.9,19.5,4.3,34-30.9,44.7-44.2,29.6-37-6.6-53.4,54.3-77.8,80.5-32.3,66.2-25.8,78-45.7Z" filter="url(#filter6240)"/>
+  <path class="st0" d="m458 268.7c32.1-21.3 115.4-26.5 161.8-28.9l83.4-5.8 64.7 716.1c-67.8-4.1-199.1-12.5-231-10.3-53.9 3.8-93.5-15.2-108.5-63.4-12.1-39 19.8-54.2-23.2-96.2-47.3-46.3-130.1-22.4-123.8-86.4 7.6-76.2-31.4-65-50.4-122.1-32.5-97.3 32.2-84.9 66.4-148.4 41.8-77.8 91.7-108.9 160.6-154.5z" filter="url(#filter6254)"/>
+  <path class="st0" d="m435.5 317.6c10.3-27 89.4-41.4 127.7-45.3l51.2-1.8c12.8-2 32.6 103.2-34.9 139.5-81.2 43.6-73.5 15-160.1 7.6-44.9-3.9-65.9-27.5-29-52.8 5.9-5 34.8-20.1 45.2-47.2z" filter="url(#filter6268)"/>
+  <path class="st0" d="m460 451.3c37.1 18.6 109.5 0 142.2-13.7l0.3 3.7 94.1-40.9 79.6 452.1c-25.7 47.2-88.7 114.8-178.5 66.7-33.8-18-86.2 13.4-118.6-5.6-48.6-28.6-20.9-70-30-118.9-3.3-17.7-46.4-57-80.5-59.8-21.1-1.7-69.6-19.2-68-50.4 0.9-17.6 27.7-14.9-17.4-74.4-45.1-59.4-30.2-70.7-25.5-108.1 5.3-41.6 57.8-22.6 68.5-58.1s87.4-15.9 133.8 7.3z" filter="url(#filter6282)"/>
+  <path class="st0" d="M425.8,474.1c-32-16.3-57.8-20.1-85.7-.5-53,29.2-34.4,33-51.8,67.2-16.2,31.9,24.9,39.7,26.5,62.6,2.1,30.5,28.1,3.4,53.7.4,33.2-3.9,49.5,1.2,88.2-24.2,52.3-34.3,36.8-46.9,21-64.6-27.7-31-11.8-20.5-51.8-40.9Z" filter="url(#filter6296)"/>
+  <path class="st0" d="m515.9 544.7c6.7-58.4-56.9-60 28.3-73.9l44.7-7.8 13.8 9.2 99.9 28.3 87.3 352.4c-38.7 26.2-152.6 106.8-178.3 56.5-24-47-80.7-15.7-100.5-9.2s-40.5-40.8-35.5-82.8c5.1-42.1-0.6-62.4-47.4-77.8-33.3-11-34.2-24.1-73.8-32.4-44.9-9.4-26.8-60.7-6.6-67.2 11.2-3.6 4.8-18.4 66-13 43 3.8 97.7-44.1 102.1-82.3z" filter="url(#filter6310)"/>
+  <path class="st0" d="M534.8,566.1c12.6-64.6,25.4-88.5,57.6-59.1l130.5,41.9,22.1,315.9c-41.3,17.4-111.8,43.9-142.5,13.4-31-30.9-39.1-17.8-72.2-7.1-12.1,3.9-38.7-31.5-30.2-62.2,6.8-24.5-20.6-58.9-35.2-73-21.3-20.6-46.1-22.4-76.8-39.9-57.9-33.1-3.7-53.1,59.2-52.4,16.1.2,71.9,3.3,87.6-77.5Z" filter="url(#filter6324)"/>
+  <path class="st0" d="m533.2 629.8c15.6-46.1 37-58.9 57.8-68.5 41.8 9.9 127 39.2 129.3 43.8 2.2 4.7 21.6 100.4 31 147.6-47.1 44.3-135.3 127-151 102.8-17.9-27.5-23.9-25.7-52.2-12.6-23.9 11.1-21.9-30.5-30.7-68.3-6.6-28.3-19.9-39.9-69.9-69.8-49.9-29.9-38.2-48.3-6.5-39.4 28.5 3.4 82.2-6.3 92.1-35.7z" filter="url(#filter6338)"/>
+  <path class="st0" d="m565.2 624.8 64.9-45.8c20.2 59.5 43.8 146.8 21.2 172.9-48.3 55.5-84.7 83-103.4 55.9-22.5-32.7-12.3-55.6-21.3-74.6-9.9-16.3-39.4-39-8.8-59.2 21.2-14 20.2-22.3 47.4-49.2z" filter="url(#filter6352)"/>
+  <path class="st0" d="m578.8 646.9 77.5-39.6c38.8-23.9-3.9 107.9-19.3 125.6-32.7 37.6-48.4 47.8-66.4 35.7-22.4-15.1-11.8-35.4-17.9-48.3 0-17.3-20.7-27 0-40.8 14.3-9.5 7.7-14.4 26-32.6z" filter="url(#filter6366)"/>
+ </g>
+</svg>
