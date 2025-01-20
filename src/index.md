@@ -5,8 +5,8 @@ page_class: home
 
 <div class="content">
   <div class="topography">  
-
-    <%= svg "/images/topography-right.svg" %>
+    <%= svg "/images/inward.svg" %>
+    <%= svg "/images/outward.svg" %>
   </div>
   <div class="intro observe" data-controller="observer">
     <h1 class="title">Creative House</h1>
