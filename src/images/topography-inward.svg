@@ -46,12 +46,4 @@
   <path filter="url(#inwards)" class="path left" d="M331.8,540c-19.8-58.2-34.5-78.6-60.1-47.3l-113.5,55.7,20.6,295.2c39.9,10.7,107.6,26.2,131.6-6,24.3-32.6,33.3-21.5,64.9-15.9,11.5,2,31.2-34.2,19.5-61.5-9.4-21.8,11.2-57.1,22.6-72.1,16.8-21.8,39.1-26.7,64.9-46.9,48.5-38.1-3.5-49.6-60.7-40.9-14.6,2.2-65.1,12.3-89.8-60.4Z"/>
   <path filter="url(#inwards)" class="path left" d="M341.5,598.7c-20.2-40.6-41.3-49.7-61.5-55.9-36.8,14.6-110.7,52.6-112.1,57.2-1.4,4.6-6.7,95.7-9.2,140.6,48.7,34.9,139.7,100.1,150.9,75.7,12.8-27.8,18.5-26.9,46-18.4,23.3,7.2,16-31,19.1-67.2,2.3-27,13-39.5,54.7-73.6,41.6-34.1,28.6-49.7.9-37.3-25.5,6.8-75.7,4.8-88.6-21.1Z"/>
   <path filter="url(#inwards)" class="path left" d="M311.7,598.2l-65.1-34c-10.7,57.7-21,141.5,3,162.7,51.2,45.2,87.9,65.9,101.4,38.4,16.3-33.2,4-53,9.8-71.8,6.9-16.4,30.9-41.1.4-55.9-21.1-10.2-21.3-18-49.6-39.4Z"/>
-  <!-- <animate xlink:href="#blur1" attributeName="stdDeviation" from="0" to="16" dur="10s" begin="0s" repeatCount="0"/>
-  <animate xlink:href="#blur2" attributeName="stdDeviation" from="0" to="6" dur="10s" begin="0s" repeatCount="0"/>
-  <animate xlink:href="#blur3" attributeName="stdDeviation" from="0" to="4.55" dur="10s" begin="0s" repeatCount="0"/>
-  <animate xlink:href="#blur4" attributeName="stdDeviation" from="0" to="5.2" dur="10s" begin="0s" repeatCount="0"/>
-  <animate xlink:href="#blur5" attributeName="stdDeviation" from="0" to="4" dur="10s" begin="0s" repeatCount="0"/>
-  <animate xlink:href="#blur6" attributeName="stdDeviation" from="0" to="12" dur="10s" begin="0s" repeatCount="0"/>
-  <animate xlink:href="#blur7" attributeName="stdDeviation" from="0" to="1" dur="10s" begin="0s" repeatCount="0"/>
-  <animate xlink:href="#blur8" attributeName="stdDeviation" from="0" to="6" dur="10s" begin="0s" repeatCount="0"/> -->
 </svg>

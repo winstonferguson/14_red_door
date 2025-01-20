@@ -171,6 +171,7 @@
   } // .home .prelude
   
   .services {
+    scroll-margin-top: 18vh;
     margin: 35vh 0;
 
     @media screen and (min-width: $breakpoint-tablet) {
