@@ -8,8 +8,6 @@ export default class extends Controller {
     this.landed = false;
     this.lastKnownScrollPosition = 0;
 
-    this.element.classList.add("fly");
-
     this.prepare();
     window.onresize = (event) => this.prepare();
   }
@@ -19,20 +17,21 @@ export default class extends Controller {
     this.container = this.aside.querySelector(".container");
     this.landingPosition = this.aside.getBoundingClientRect().top;
 
+    if ( window.innerHeight < this.landingPosition ) {
+      this.element.classList.add("fly");
+    } else {
+      this.element.classList.add("land");
+    }
+
     document.onscroll = (event) => this.approach();    
   }
 
   approach() {
     this.lastKnownScrollPosition = window.innerHeight + window.scrollY;
 
-    if ( !this.landed ) {
-      window.requestAnimationFrame(() => {
-        this.land(this.lastKnownScrollPosition);
-        this.landed = false;
-      });
-    }
-
-    this.landed = true;
+    window.requestAnimationFrame(() => {
+      this.land(this.lastKnownScrollPosition);
+    });    
   }
 
   land(scrollPosition) {

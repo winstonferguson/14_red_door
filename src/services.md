@@ -6,7 +6,7 @@ page_class: services
 
 <div class="content">
   <% collections.services.resources.each do |service| %>
-    <a class="door" href="<%= service.relative_url %>">
+    <a class="door" href="<%= service.relative_url %>" data-turbo="false">
       <%= service.data.title %>
     </a>
   <% end %>

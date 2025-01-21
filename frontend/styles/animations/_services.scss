@@ -118,7 +118,14 @@
               12px 12px 32px 0px rgba(0, 0, 0, 0.14), 
               -12px -12px 32px 0px rgba(255, 255, 255, 0.70);
             opacity: 0;
+            z-index: 0;
           } // service .aside .container.land .shaded::after
+
+          &:last-of-type {
+            &:hover {
+              opacity: 0.4;
+            }
+          }
         } // service .aside .container.land .shaded
       } // service .aside .container.land
 
