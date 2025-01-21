@@ -334,8 +334,8 @@
 
               border: none;
               background: $color-gray-1;
-              height: 62px;
-              width: 62px;
+              min-height: 61px;
+              min-width: 61px;
               transition: box-shadow 0.25s linear;
             } // service > aside > container > nav > links > link:hover
     

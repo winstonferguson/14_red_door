@@ -7,8 +7,8 @@
   
       @for $i from 1 through 2 {
         &:nth-child(#{$i}) {
-          animation: fade-in 1s ease-out forwards;
-          animation-delay: #{$i * 0.25}s;
+          animation: fade-in 0.75s ease-out forwards;
+          animation-delay: #{$i * 0.15}s;
         }
       }
     }

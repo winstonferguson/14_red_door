@@ -19,7 +19,7 @@ export default class extends Controller {
 
   param() {
     const params = captureParams();
-    const filter = params.get("service").toLowerCase();
+    const filter = params?.get("service")?.toLowerCase();
 
     if (filter) {
       this.inputs.forEach(input => {

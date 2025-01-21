@@ -3,39 +3,42 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
 
   connect() {
-    this.content = document.querySelector("main > .content");
+    this.aside, this.container, this.landingPosition;
+
     this.landed = false;
-    this.landingPosition = this.content.getBoundingClientRect().bottom;
     this.lastKnownScrollPosition = 0;
-    this.startPosition = this.element.getBoundingClientRect().top;
 
     this.element.classList.add("fly");
+
+    this.prepare();
+    window.onresize = (event) => this.prepare();
+  }
+
+  prepare() {
+    this.aside = document.querySelector("main > .aside");
+    this.container = this.aside.querySelector(".container");
+    this.landingPosition = this.aside.getBoundingClientRect().top;
 
     document.onscroll = (event) => this.approach();    
   }
 
-  prepare() {
-    this.content = document.querySelector("main > .content");
-    this.landingPosition = this.content.getBoundingClientRect().bottom;
-    this.startPosition = this.element.getBoundingClientRect().top;
-  }
-
   approach() {
-    this.lastKnownScrollPosition = this.startPosition + window.scrollY;
+    this.lastKnownScrollPosition = window.innerHeight + window.scrollY;
 
     if ( !this.landed ) {
       window.requestAnimationFrame(() => {
-        console.log("approaching");
         this.land(this.lastKnownScrollPosition);
         this.landed = false;
       });
     }
-  
+
     this.landed = true;
   }
 
   land(scrollPosition) {
-    if ((scrollPosition - 55) > this.landingPosition) {
+    const calculatedPosition = scrollPosition - (this.container.clientHeight + 30);
+
+    if (calculatedPosition > this.landingPosition) {
       this.element.classList.add("land");
       this.element.classList.remove("fly");
     } else {
