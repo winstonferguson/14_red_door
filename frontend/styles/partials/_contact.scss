@@ -5,6 +5,14 @@
     @extend %flex-column;
 
       gap: 50px;
+      max-width: 650px;
+
+      @media screen and (min-width: $breakpoint-large-desktop) {
+        align-items: center;
+        justify-content: center;
+        max-width: $max-page-width;
+        min-height: 40vh;
+      }
     }
 
   .form {
@@ -13,7 +21,7 @@
     gap: 30px;
     position: relative;
 
-    @media screen and (min-width: $breakpoint-tablet) {
+    @media screen and (min-width: $breakpoint-large-desktop) {
       display: grid;
       gap: 60px;
       grid-template-columns: repeat(12, 1fr);
@@ -71,6 +79,7 @@
           @media screen and (min-width: $breakpoint-tablet) {
             align-items: stretch;
             flex-direction: row;
+            justify-content: space-evenly;
             gap: 32px;
           }
         }
