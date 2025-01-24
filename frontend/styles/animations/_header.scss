@@ -112,9 +112,7 @@
   // }
 
   &.active-mobile-menu {
-    height: 280px;
-    padding-top: 100px;
-    transition: height 0.5s ease-in-out;    
+    padding: 100px 0; 
 
     .close {
       animation: fade-in 0.5s ease-in 1s forwards;
@@ -159,7 +157,7 @@
       left: calc(100% - 110px);
       position: absolute;
       // right: 50px;
-      top: calc(100% - 218px);
+      top: calc(100% - 80px);
       // bottom: 50px;
       transition: left 0s ease-in-out 0.5s, top 0s ease-in-out 0.5s;
       width: 60px;

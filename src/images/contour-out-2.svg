@@ -3,7 +3,7 @@
   <filter id="filter1110" x="-.080671" y="-.10672" width="1.1613" height="1.2134" color-interpolation-filters="sRGB">
    <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="result1"/>
    <feGaussianBlur in="result1" result="result0" stdDeviation="7"/>
-   <feDiffuseLighting lighting-color="rgb(216,215,214)" diffuseConstant="1.2433862433862433" surfaceScale="-4.7999999999999998">
+   <feDiffuseLighting lighting-color="rgb(236,235,234)" diffuseConstant="1.2433862433862433" surfaceScale="-4.7999999999999998">
     <feDistantLight azimuth="230" elevation="120"/>
    </feDiffuseLighting>
    <feComposite in2="result0" operator="in" result="result91"/>
