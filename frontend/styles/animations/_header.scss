@@ -46,7 +46,7 @@
         @extend %after-box;
         @extend %header-link-shadow;
   
-        animation: fade-in 0.5s ease-in 0.5s forwards;
+        animation: fade-in 0.25s ease-in 0.5s forwards;
         border-radius: 50px;
         opacity: 0;
         transition: box-shadow 0.5s linear;
@@ -169,17 +169,17 @@
       z-index: 9;
 
       &:nth-child(1) {
-        animation: fade-in 0.25s ease-out 1s forwards, scale-up 0.5s ease-out 1s forwards;
+        animation: fade-in 0.25s ease-out 0.75s forwards, scale-up 0.5s ease-out 0.75s forwards;
         // animation-delay: #{$i * 0.75}s;
       }
 
       &:nth-child(2) {
-        animation: fade-in 0.25s ease-out 1.25s forwards, scale-up 0.5s ease-out 1.25s forwards;
+        animation: fade-in 0.25s ease-out 1s forwards, scale-up 0.5s ease-out 1s forwards;
         // animation-delay: #{$i * 0.75}s;
       }
 
       &:nth-child(3) {
-        animation: fade-in 0.25s ease-out 1.5s forwards, scale-up 0.5s ease-out 1.5s forwards;
+        animation: fade-in 0.25s ease-out 1.25s forwards, scale-up 0.5s ease-out 1.25s forwards;
         // animation-delay: #{$i * 0.75}s;
       }
 

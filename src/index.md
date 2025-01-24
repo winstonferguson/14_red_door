@@ -44,7 +44,7 @@ page_class: home
     <ul class="links">
       <% collections.services.resources.each do |service| %>
       <li>
-        <a class="link" href="<%= service.relative_url %>">
+        <a class="link" href="<%= service.relative_url %>" data-turbo="false">
           <%= svg "/images/#{ service.data.image }" %>
         </a>
       </li>
