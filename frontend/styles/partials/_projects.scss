@@ -21,6 +21,7 @@
       height: 280px;
       width: 100%;
       max-width: 375px;
+      text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
       overflow: hidden;
 
       .link {
@@ -41,13 +42,13 @@
         background-size: cover;
         background-position: center;
         border-radius: 50px;
-        filter: grayscale(100%) blur(15px) opacity(25%) brightness(125%);
+        filter: grayscale(100%) blur(15px) opacity(25%);
         min-height: 100%;
         min-width: 100%;
         transition: filter 0.25s;
 
         &:hover {
-          filter: grayscale(100%) blur(0px) opacity(25%) brightness(125%);
+          filter: grayscale(100%) blur(0px) opacity(25%);
           transition: filter 0.5s;
         }
       }
@@ -65,6 +66,7 @@
         position: absolute;
         bottom: 30px;
         left: 40px;
+        letter-spacing: 0.02rem;
         width: calc(100% - 80px);
       }
     }
@@ -469,7 +471,7 @@ align-self: stretch;
   .feature-image {
     .landscape img {
       height: 50vh;
-      width: 100%;
+      min-width: 100%;
 
       @media screen and (min-width: $breakpoint-large-desktop) {
         height: auto;

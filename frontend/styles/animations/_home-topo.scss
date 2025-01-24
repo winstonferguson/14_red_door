@@ -1,0 +1,50 @@
+@use "../abstracts" as *;
+
+.home {
+  .visible {
+    &.topography {
+      &-left {
+        path {
+          opacity: 0;
+  
+          @for $i from 1 through 10 {
+
+            &:nth-child(#{$i}) {
+              animation: fade-in 1s ease-out forwards;
+              animation-delay: #{$i * 1}s;
+            }
+            
+
+            @media screen and (min-width: $breakpoint-tablet) {
+              &:nth-child(#{$i}) {
+                animation: fade-in 1s ease-out forwards;
+                animation-delay: #{$i * 0.5}s;
+              }
+            }
+          }
+        }
+      }
+  
+      &-right {
+        path {
+          opacity: 0;
+  
+          @for $i from 1 through 10 {
+
+            &:nth-child(#{$i}) {
+              animation: fade-in 1s ease-out forwards;
+              animation-delay: #{$i * 0.5}s;
+            }
+
+            @media screen and (min-width: $breakpoint-tablet) {
+              &:nth-child(#{$i}) {
+                animation: fade-in 1s ease-out forwards;
+                animation-delay: #{$i * 1}s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

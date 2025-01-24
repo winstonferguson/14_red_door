@@ -79,13 +79,17 @@
     
     @media screen and (min-width: $breakpoint-tablet) {
       align-items: flex-end;
-      gap: 32px;
-      margin-top: 120px;
+      
 
       > * {
         width: 60%;
       }
     } // .home .intro @ $breakpoint-tablet
+
+    @media screen and (min-width: $breakpoint-desktop) {
+      gap: 32px;
+      margin-top: 120px;
+    }
   } // .home .intro
 
   .prelude {
@@ -211,9 +215,14 @@
         width:  330px;
 
         @media screen and (min-width: $breakpoint-tablet) {
+          height: 280px;
+          width:  180px;
+        } // .home .services .links .link @ $breakpoint-tablet
+
+        @media screen and (min-width: $breakpoint-desktop) {
           height: 360px;
           width:  230px;
-        } // .home .services .links .link @ $breakpoint-tablet
+        }
 
         &:hover {
           border: none;
@@ -241,25 +250,20 @@
     z-index: -1;
 
     @media screen and (min-width: $breakpoint-tablet) {
-      min-height: 400vh;
-    }
+      min-height: none;
+    } // .home .topography @ $breakpoint-tablet
 
     &-left {
       left: 0;
-      top: 60vh;
-      transform: translate(-60%, 0);
-      
-      
       opacity: 1;
-
-
+      top: 60vh;
+      transform: translate(-60%, 0);      
+      
       .path {
         stroke: black;
         stroke-width: 0;
         fill: #E8E8E8;
-        // filter: url(#inwards);
-
-      }
+      } // .home .topography .topography-left .path
 
       @media screen and (min-width: $breakpoint-tablet) {
         top: 0;

@@ -6,11 +6,17 @@
   transition: height 0.25s ease-in-out 0.25s;
 
   .logo {
-    animation: fade-in 0.25s ease-in-out forwards;
+    animation: fade-in 1s ease-in 0.25s forwards;
+    // animation: fade-in 0.25s ease-in-out forwards;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    right: 0;
+    top: 0;
   }
 
   .mobile {
-    animation: fadeI-in 0.25s ease-in-out forwards;
+    animation: fade-in 0.25s ease-in-out forwards;
 
     .button {
       animation: fade-in 0.5s ease-in 0s forwards;
@@ -36,8 +42,6 @@
         transition: box-shadow 0.25s linear;
       }
 
-      
-  
       &::after {
         @extend %after-box;
         @extend %header-link-shadow;
@@ -98,14 +102,14 @@
     } // .header .nav-link:not(.active)
   } // .header .nav-link
 
-  .logo {
-    animation: fade-in 1s ease-in 0.25s forwards;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    right: 0;
-    top: 0;
-  }
+  // .logo {
+    
+  //   bottom: 0;
+  //   left: 0;
+  //   opacity: 0;
+  //   right: 0;
+  //   top: 0;
+  // }
 
   &.active-mobile-menu {
     height: 280px;
@@ -122,8 +126,8 @@
       opacity: 0;
       width: 100%;
 
-      > .button {
-        animation: fade-out 0.4s ease-in 0s forwards;
+      .button.shaded {
+        animation: fade-out 0.2s ease-in 0s forwards;
         display: block;
         opacity: 1;
         position: absolute;
@@ -137,7 +141,7 @@
       0% {
         opacity: 1;
       }
-      20% {
+      10% {
         opacity: 0;
       }
       50% {
