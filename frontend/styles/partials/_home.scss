@@ -253,8 +253,8 @@
     width: 100%;
     z-index: -1;
 
-    @media screen and (min-width: $breakpoint-tablet) {
-      min-height: none;
+    @media screen and (min-width: $breakpoint-desktop) {
+      min-height: 400vh;
     } // .home .topography @ $breakpoint-tablet
 
     &-left {

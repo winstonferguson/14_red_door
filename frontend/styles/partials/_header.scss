@@ -118,7 +118,7 @@
   } // header.active-mobile-menu
 } // header
 
-a.nav-link {
+.nav-link {
   @extend %flex;
   @extend %header-link-shadow;
 

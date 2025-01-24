@@ -51,16 +51,17 @@
         opacity: 0;
         transition: box-shadow 0.5s linear;
       }
+
   
-      &:hover {
-        @extend %hover-shadow;
+      // &:hover {
+      //   @extend %hover-shadow;
   
-        transition: box-shadow 0.5s linear;
+      //   transition: box-shadow 0.5s linear;
   
-        &::after {
-          animation: fade-out 0.1s ease-in forwards;
-        }
-      }
+      //   &::after {
+      //     animation: fade-out 0.1s ease-in forwards;
+      //   }
+      // }
 
       &.nav {
         position: absolute;
@@ -71,28 +72,26 @@
   }
   
 
-  .nav-link {
+  .link, .nav-link {
     &.active {
       animation: scale-up 0.5s ease-in-out;
       opacity: 1;
     }
 
     &:not(.active) {
-      box-shadow: none;
       position: relative;
 
-      &::after {
-        @extend %after-box;
-        @extend %header-link-shadow;
+      @media screen and (max-width: $breakpoint-tablet) {
+        box-shadow: none;
+      }    
+      
 
-        animation: fade-in 0.5s ease-in forwards;
-        border-radius: 50px;
-        transition: box-shadow 0.5s linear;
-      } // header .nav-link::after
+ // header .nav-link::after
 
       &:hover {
         @extend %hover-shadow;
 
+        border: none !important;
         transition: box-shadow 0.5s linear;
 
         &::after {
