@@ -18,8 +18,8 @@ layout: default
     <%= yield %>
   </div>
 </div>
-<aside class="aside">
-  <div class="container" data-controller="landing">
+<aside class="aside" data-controller="land">
+  <div class="container">
     <nav class="shaded nav">
       <span class="desktop">Select</span>
       <ul class="links">
@@ -30,7 +30,9 @@ layout: default
         <% end %>
       </ul>
     </nav>
-    <a href="<%= relative_url "/projects?service=#{resource.data.title.downcase}" %>" class="shaded desktop"><span class="projects">View our <%= resource.data.title %> projects</span></a>    
+    <a href="<%= relative_url "/projects?service=#{resource.data.title.downcase}" %>" class="shaded desktop projects">
+      <span class="link">View our <%= resource.data.title %> projects</span>
+    </a>    
   </div>
  
 </aside>

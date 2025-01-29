@@ -68,6 +68,11 @@
   }
 }
 
+@keyframes border-out {
+  to {
+    border: 0px solid transparent
+  }
+}
 
 @keyframes topo {
   0% {

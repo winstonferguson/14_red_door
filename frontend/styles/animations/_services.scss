@@ -120,13 +120,22 @@
             opacity: 0;
             z-index: 0;
           } // service .aside .container.land .shaded::after
+        } // service .aside .container.land .shaded
 
-          &:last-of-type {
-            &:hover {
-              opacity: 0.4;
+        .projects {
+          &:hover {
+            box-shadow: 
+            -3px -3px 8px 0px rgba(255, 255, 255, 0.7) inset,
+            3px 3px 8px 0px rgba(0, 0, 0, 0.14) inset,
+            3px 3px 8px 0px rgba(255, 255, 255, 0.7),
+            -3px -3px 8px 0px rgba(0, 0, 0, 0.14);
+
+            &::after {
+              animation: fade-out 0.25s ease-out forwards;
+              opacity: 0;
             }
           }
-        } // service .aside .container.land .shaded
+        }
       } // service .aside .container.land
 
       .link {
@@ -135,7 +144,9 @@
     } // service .aside .container
 
     .projects {
-      animation: fade-in 0.25s ease-out forwards;
+      .link {
+        animation: fade-in 0.25s ease-out forwards;
+      }
     } // service .aside .projects
   } // service .aside
 

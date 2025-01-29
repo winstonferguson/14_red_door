@@ -213,10 +213,9 @@
           9px 9px 32px 0px rgba(0, 0, 0, 0.15), 
           -1px -1px 2px 0px rgba(255, 255, 255, 0.15) inset, 
           6px 6px 24px 0px rgba(0, 0, 0, 0.04) inset;
-        height: 110px;
+        height: 220px;
         justify-content: center;
-        padding: 50px 0px;
-        width:  330px;
+        width: 140px;
 
         @media screen and (min-width: $breakpoint-tablet) {
           height: 280px;
@@ -238,7 +237,11 @@
         } // .home .services .links .link:hover
 
         .vector {
-          width: 100px;
+          width: 80px;
+
+          @media screen and (min-width: $breakpoint-tablet) {
+            width: 100px;
+          }
         } // .home .services .links .link .vector
       } // .home .services .links .link
     } // .home .services .links

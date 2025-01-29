@@ -304,9 +304,15 @@
           @extend %flex;
     
           gap: 10px;
+          position: relative;
+          width: 205px;
+          min-height: 62px;
     
           @media screen and (min-width: $breakpoint-desktop) {
-            gap: 24px;
+            justify-content: space-evenly;
+          
+            width: 234px;
+            // gap: 24px;
           } // service > aside > container > nav > links @ $breakpoint-desktop
     
           .link {
@@ -319,6 +325,28 @@
             gap: 10px;
             width: 60px;
             z-index: 1;
+
+            &:nth-of-type(1) {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translate(0, -50%);
+            }
+
+            &:nth-of-type(2) {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+            
+
+            &:nth-of-type(3) {
+              position: absolute;
+              top: 50%;
+              right: 0;
+              transform: translate(0, -50%);
+            }
             
             .icon {
               @extend %flex;
@@ -327,16 +355,20 @@
                 fill: $color-gray-main;
               }
             } // service > aside > container > nav > links > link > icon
-    
-            &:hover {
-              @extend %hover-shadow;
 
-              border: none;
-              background: $color-gray-1;
-              min-height: 61px;
-              min-width: 61px;
-              transition: box-shadow 0.25s linear;
-            } // service > aside > container > nav > links > link:hover
+            &:not(.active) {
+              &:hover {
+                @extend %hover-shadow;
+  
+                border: none;
+                min-height: 62px;
+                min-width: 62px;
+                transition: box-shadow 0.25s linear;
+              } // service > aside > container > nav > links > link:hover
+
+            }
+    
+            
     
             &.active {
               background: $color-red;

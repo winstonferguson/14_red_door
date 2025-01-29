@@ -72,12 +72,12 @@ page_class: home
     </ul>
   </div>
   <div class="cta" data-controller="observer">
-    <a class="link" href="<%= relative_url '/contact' %>">
+    <div class="link">
       ready to work?
-      <span class="device">
+      <a class="device" href="<%= relative_url '/contact' %>">
         <%= svg "/images/link-arrow.svg" %>
-      </span>
-    </a>
+      </a>
+    </div>
   </div>
   
 </div>
