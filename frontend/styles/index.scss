@@ -8,7 +8,7 @@
 body {
   background: $color-gray-1;
   color: $color-gray-main;
-  cursor: url(/14_red_door/images/pointer.svg), url(/14_red_door/images/pointer.png), auto;
+  cursor: url(/images/pointer.svg), url(/images/pointer.png), auto;
   font-family: neue-haas-unica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -25,17 +25,17 @@ body {
 
 a {
   color: $color-gray-main;
-  cursor: url(/14_red_door/images/hand.svg), url(/14_red_door/images/hand.png), auto;
+  cursor: url(/images/hand.svg), url(/images/hand.png), auto;
   text-decoration: none;
 }
 
 label {
-  cursor: url(/14_red_door/images/pointer.svg), url(/14_red_door/images/pointer.png), auto;
+  cursor: url(/images/pointer.svg), url(/images/pointer.png), auto;
 }
 
 input,
 textarea{
-  cursor: url(/14_red_door/images/hand.svg), url(/14_red_door/images/hand.png), auto !important;
+  cursor: url(/images/hand.svg), url(/images/hand.png), auto !important;
 }
 
 input {
