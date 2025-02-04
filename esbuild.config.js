@@ -31,7 +31,7 @@ const build = require("./config/esbuild.defaults.js")
  * @type {BuildOptions}
  */
 const esbuildOptions = {
-  publicPath: "/14_red_door",
+  publicPath: "",
   plugins: [
     // add new plugins here...
   ],
