@@ -57,7 +57,7 @@
           background-color: $color-gray-1;
           border: none;
           color: $color-gray-main;
-          cursor: url(/14_red_door/images/hand.svg), url(/14_red_door/images/hand.png), auto !important;   
+          cursor: url(/images/hand.svg), url(/images/hand.png), auto !important;   
           font-weight: 600;
           text-decoration: underline;
           text-transform: lowercase;
@@ -125,7 +125,7 @@
           @extend %button;
 
           box-shadow: none;
-          cursor: url(/14_red_door/images/hand.svg), url(/14_red_door/images/hand.png), auto !important;        
+          cursor: url(/images/hand.svg), url(/images/hand.png), auto !important;        
           font-size: 20px;
           height: 56px;
           justify-content: center;
