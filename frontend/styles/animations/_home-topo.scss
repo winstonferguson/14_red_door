@@ -81,34 +81,34 @@
   }
   
   .visible {
-    &.topography {
-      &-left {
-        path {
-          opacity: 0;
+    // &.topography {
+    //   &-left {
+    //     path {
+    //       opacity: 0;
   
-          @for $i from 1 through 10 {
+    //       @for $i from 1 through 10 {
 
-            &:nth-child(#{$i}) {
-              animation: fade-in 0.8s ease-out forwards;
-              animation-delay: #{$i * 0.4}s;
-            }
-          }
-        }
-      }
+    //         &:nth-child(#{$i}) {
+    //           animation: fade-in 0.8s ease-out forwards;
+    //           animation-delay: #{$i * 0.4}s;
+    //         }
+    //       }
+    //     }
+    //   }
   
-      &-right {
-        path {
-          opacity: 0;
+    //   &-right {
+    //     path {
+    //       opacity: 0;
   
-          @for $i from 1 through 10 {
+    //       @for $i from 1 through 10 {
 
-            &:nth-child(#{$i}) {
-              animation: fade-in 0.8s ease-out forwards;
-              animation-delay: #{$i * 0.4}s;
-            }
-          }
-        }
-      }
-    }
+    //         &:nth-child(#{$i}) {
+    //           animation: fade-in 0.8s ease-out forwards;
+    //           animation-delay: #{$i * 0.4}s;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
   }
 }
