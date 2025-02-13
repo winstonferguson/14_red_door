@@ -1,0 +1,29 @@
+@use "../abstracts" as *;
+
+.not-found {
+  .main {
+    @extend %flex-column;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+    min-height: 100%;
+    min-width: 100%;
+    padding: 100px 0;
+
+    .button {
+      font-size: 22px;
+      margin-top: 3rem;
+      padding: 18px 28px;
+    }
+  
+    .heading {
+      font-size: 32px;
+      font-weight: 400;
+    }
+  
+    .title {
+      font-size: 64px;
+      font-weight: 400;
+    }
+  }  
+}
