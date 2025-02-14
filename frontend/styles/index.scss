@@ -23,7 +23,8 @@ body {
 }
 
 
-a {
+a,
+button {
   color: $color-gray-main;
   cursor: url(/images/hand.svg), url(/images/hand.png), auto;
   text-decoration: none;
@@ -34,7 +35,7 @@ label {
 }
 
 input,
-textarea{
+textarea {
   cursor: url(/images/hand.svg), url(/images/hand.png), auto !important;
 }
 

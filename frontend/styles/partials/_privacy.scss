@@ -38,3 +38,99 @@
     }
   }
 }
+
+.cookie-consent-banner {
+  background-color: #fff;
+  border-color: #000;
+  border-radius: 60px;
+  bottom: 4%;
+  font-size: 15px;
+  left: 4%;
+  padding: 40px;
+  position: fixed;
+  right: 4%;
+  z-index: 999;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 20px;
+    padding: 60px;
+  }
+
+  #btn-reject-all {
+    background-color: $color-gray-2;
+    border-color: $color-gray-2;
+    color: #000;
+  }
+
+  #btn-accept-all {
+    background-color: #000;
+    color: #fff;    
+  }
+
+  .cookie-consent-buttons {
+    margin-top: 26px;
+  }
+
+  .cookie-consent-button {
+    appearance: none;
+    background-color: transparent;
+    border-radius: 30px;
+    border-style: solid;
+    font-size: 16px;
+    margin: 4px 4px 4px 0;
+    padding: 6px 12px;
+    text-transform: lowercase;
+  }
+
+  .cookie-consent-options {
+    display: grid;
+    font-size: 12px;
+    grid-template-columns: 50% 50%;
+    margin-top: 1rem;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      display: flex;
+      gap: 1rem;
+    }
+
+    input[type=checkbox] {
+      appearance: none;
+      border: 1px solid #000;
+      border-radius: 50%;
+      height: 16px;
+      width: 16px;
+
+      &:checked {
+        background-color: #000;
+        border-color: #000;
+      }
+
+      &:disabled {
+        background-color: $color-gray-2;
+        border-color: $color-gray-2;
+      }
+    }
+
+    label {
+      @extend %flex;
+
+      align-items: center;
+      gap: 0.5rem;
+
+      &.disabled {
+        color: $color-gray-2;
+      }
+
+    }
+  }
+
+  .heading {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      font-size: 32px;
+    }
+  }
+}
