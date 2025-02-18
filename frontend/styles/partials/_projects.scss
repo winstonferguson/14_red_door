@@ -46,11 +46,14 @@
         min-height: 100%;
         min-width: 100%;
         opacity: 0.25;
-        transition: filter 0.25s;
+        // transition: filter 0.25s;
+        -webkit-transform: translateZ(0);
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
 
         &:hover {
-          filter: grayscale(100%) blur(0px);
-          transition: filter 0.5s;
+          filter: blur(0px);
+          // transition: filter 0.5s;
         }
       }
 
