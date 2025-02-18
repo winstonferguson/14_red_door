@@ -178,6 +178,19 @@
       } // .home .prelude .row .links
     } // .home .prelude .row
   } // .home .prelude
+
+  .projects {
+    .items {  
+      @media screen and (min-width: $breakpoint-tablet) {
+        flex-direction: column;
+      }
+
+      @media screen and (min-width: $breakpoint-desktop) {
+        flex-direction: row;
+      }
+    }
+  } // .home .projects
+  
   
   .services {
     scroll-margin-top: 18vh;
