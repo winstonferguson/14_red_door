@@ -128,6 +128,7 @@
   justify-content: center;
   line-height: 52px;
   padding: 2px 28px 6px 28px; 
+  transition: box-shadow 0.5s ease-in;
 
   &.active {
     background: $color-red;
