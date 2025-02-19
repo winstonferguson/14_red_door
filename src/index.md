@@ -58,7 +58,7 @@ page_class: home
       <li class="item">
         <a class="link" href="<%= project.relative_url %>">
           <span class="title"><%= project.data.title %></span>
-          <div class="image" style="background-image: url('<%= relative_url responsive_image_path(project.data.image_directory + '/thumbnail.webp', width: 375) %>')">
+          <div class="image">
           </div>
           <span class="summary"><%= project.data.summary %></span>
         </a>
