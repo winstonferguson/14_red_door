@@ -15,7 +15,7 @@
 
     @media screen and (min-width: $breakpoint-desktop) {
       gap: 60px;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       min-height: 40vh;
       padding: 90px;  
     } // services > content @ $breakpoint-desktop
@@ -60,7 +60,7 @@
       justify-self: end;
     } // services > door &:nth-of-type(1)
 
-    &:nth-of-type(3) {
+    &:nth-of-type(2) {
       justify-self: start;
     } // services > door &:nth-of-type(3)
 

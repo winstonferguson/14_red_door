@@ -5,18 +5,18 @@ page_class: home
 
 <div class="content">
   <div class="topography">  
-  <%= svg "/images/contour-in.svg" %>
-  <%= svg "/images/contour-out-2.svg" %>
+    <img id="topographyLeft" class="topography-left device" src="/images/TopographLeft-o.png" >  
+    <img id="topographyRight" class="topography-right device" src="/images/TopographRight-o.png" >  
   </div>
   <div class="intro observe" data-controller="observer">
-    <h1 class="title">Creative House</h1>
-    <p class="copy">At 14 red door, we open doors to solutions<span class="span"> in visual and spatial practices.</span></p>
+    <h1 class="title">Creative Studio</h1>
+    <p class="copy">14 red door transforms brands through refined, emotionally powerful visual storytelling</p>
   </div>
   <div class="prelude">
     <div class="row observe" data-controller="observer">
       <div class="copy">
-        <p>Inspired by forgotten memories, 14 Red Door explores limitless creativity in visual and spatial realms.</p>
-        <p>We open doors to the unseen, undefined, and extraordinary.</p>
+        <p>rooted in subtraction, 14 red door distils complexity into clarity</p>
+        <p>we craft high-concept visuals that redefine luxury and identity</p>
       </div>
       <div class="links" data-controller="observer">
         <a href="#" data-controller="scroll" data-scroll-selector-value="#services">
@@ -28,7 +28,7 @@ page_class: home
     </div>
     <div class="row fields observe" data-controller="observer">
       <div class="copy">
-        <p>14 red door is a creative house building in 3 fields:</p>
+        <p>explore our work in:</p>
       </div>
       <div class="links">
         <% collections.services.resources.each do |service| %>

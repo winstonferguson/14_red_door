@@ -294,8 +294,12 @@
 
       @media screen and (min-width: $breakpoint-tablet) {
         top: 0;
-        transform: translate(-50%, 0);
+        transform: translate(-65%, 0);
       } // .home .topography .topography-left @ $breakpoint-tablet
+
+      @media screen and (min-width: 1400px) {
+        transform: translate(-50%, 0);
+      } // .home .topography .topography-right @ $breakpoint-desktop 
     }  // .home .topography .topography-left
 
     &-right {
@@ -305,8 +309,12 @@
 
       @media screen and (min-width: $breakpoint-tablet) {
         top: 250px;
-        transform: translate(50%, 0);
+        transform: translate(65%, 0);
       } // .home .topography .topography-right @ $breakpoint-tablet
+
+      @media screen and (min-width: 1400px) {
+        transform: translate(50%, 0);
+      } // .home .topography .topography-right @ $breakpoint-desktop 
     } // .home .topography .topography-right
 
     .device {
@@ -315,8 +323,16 @@
       position: absolute;
 
       @media screen and (min-width: $breakpoint-tablet) {
-        height: auto;
+        height: 150vh;
       } // .home .topography .device @ $breakpoint-tablet
+
+      @media screen and (min-width: $breakpoint-desktop) {
+        height: 190vh;
+      } // .home .topography .device @ $breakpoint-large-desktop
+
+      @media screen and (min-width: 1600px) {
+        height: 200vh;
+      } // .home .topography .device @ $breakpoint-large-desktop
     }  // .home .topography .device 
   } // .home .topography 
 } // .home
