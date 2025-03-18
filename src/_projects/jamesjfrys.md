@@ -15,7 +15,6 @@ title: jamesjfrys
 
 <% end %>
 
-
 <%= render Project::FeatureVideo.new(resource: @resource, src: 'jamesjfrys.mp4') %>
 
 <%= render Project::Gallery.new(resource: @resource, srcs: %w[1.jpeg 2.jpeg]) %>

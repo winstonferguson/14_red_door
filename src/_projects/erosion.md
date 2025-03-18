@@ -15,7 +15,6 @@ title: Erosion
 
 <% end %>
 
-
 <%= render Project::FeatureVideo.new(resource: @resource, src: 'erosion.mp4') %>
 
 Zellerfeld is a leader in 3D-printed footwear, blending innovation with sustainability. Their cutting-edge technology creates custom, high-performance shoes that offer both style and comfort, while reducing environmental impact.

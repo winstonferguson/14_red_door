@@ -336,16 +336,26 @@
             &:nth-of-type(1) {
               position: absolute;
               top: 50%;
-              left: 50%;
+              left: 30%;
               transform: translate(-50%, -50%);
+
+              @media screen and (min-width: $breakpoint-desktop) {
+                left: 50%;
+
+              }
             }
             
 
             &:nth-of-type(2) {
               position: absolute;
               top: 50%;
-              right: 0;
-              transform: translate(0, -50%);
+              right: 30%;
+              transform: translate(50%, -50%);
+
+              @media screen and (min-width: $breakpoint-desktop) {
+                right: 0;
+                transform: translate(0, -50%);
+              }
             }
             
             .icon {
@@ -413,7 +423,7 @@
             9px 9px 32px 0px rgba(0, 0, 0, 0.15), 
             -1px -1px 2px 0px rgba(255, 255, 255, 0.15) inset, 
             6px 6px 24px 0px rgba(0, 0, 0, 0.04) inset;
-          transition: box-shadow 0.25s linear, transform 0.25s linear;
+          transition: box-shadow 0.5s linear, transform 0.5s linear;
           transform: scale(1);
         } // service > aside > container > shaded < fly
 

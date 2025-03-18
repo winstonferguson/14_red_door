@@ -40,12 +40,6 @@ page_class: contact
           3d
           </label>
         </div>
-        <div class="service">
-          <input class="input" type="checkbox" id="web" name="web" value="web" />
-          <label class="button" for="web">
-          web
-          </label>
-        </div>
       </div>
     </div>
     <div class="group">
