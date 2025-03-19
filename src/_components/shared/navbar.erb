@@ -1,13 +1,14 @@
 <nav class="tablet">
   <ul>
     <% @collections.each do |collection| %>
+      <% active_class = @resource.relative_url.include?(collection) ? 'active' : '' %>
       <li>
-        <a 
-          class="nav-link hover-shuffle <%= @resource.relative_url.include?(collection) ? 'active':'' %>" 
+        <a
+          class="nav-link hover-shuffle <%= active_class %>"
           href="<%= relative_url "/#{collection}" %>"
-          rel="prefetch" 
+          rel="prefetch"
         >
-          <%= collection %>
+          <%= collection.capitalize %>
         </a>
       </li>
     <% end %>

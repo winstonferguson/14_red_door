@@ -1,10 +1,6 @@
 require "image_processing/vips"
 require "zlib"
 
-# If you want to use a cryptographic digest, you can uncomment following:
-#
-# require "digest/sha2"
-
 class Builders::AssetHelpers < SiteBuilder
   def build
     helper :responsive_image_path do |src, width: nil, height: nil, format: 'webp'|

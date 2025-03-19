@@ -1,13 +1,29 @@
-class Shared::Navbar < Bridgetown::Component
-  def initialize(site:, resource:)
-    @site, @resource = site, resource
+module Shared
+  # Navbar component for 14RD
+  class Navbar < Bridgetown::Component
+    attr_reader :collections
 
-    @collections = @site.collection_names
-      .select { |name| name if no_show.exclude? name }
-      .sort
-  end
+    # Initializes the Navbar component
+    # @param site [Bridgetown::Site] The site object
+    # @param resource [Bridgetown::Resource] The resource object
+    def initialize(site:, resource:)
+      @site = site
+      @resource = resource
+      @collections = filtered_collections
+    end
 
-  def no_show
-    ['data', 'pages', 'posts']
+    private
+
+    # Returns an array of collection names excluding those in `no_show`
+    # @return [Array<String>] Sorted list of collection names
+    def filtered_collections
+      @site.collection_names.reject { |name| no_show.include?(name) }.sort
+    end
+
+    # Collections that should not be displayed in the navbar
+    # @return [Array<String>] List of collection names to exclude
+    def no_show
+      %w[data pages posts]
+    end
   end
 end
