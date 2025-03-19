@@ -1,5 +1,5 @@
 module Shared
-  # Image component for Bridgetown
+  # Image component for 14RD
   class Image < Bridgetown::Component
     attr_reader :alt, :src, :sizes
 
