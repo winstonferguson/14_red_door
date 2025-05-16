@@ -7,7 +7,7 @@ position: 2
 status: complete
 summary:  an animation, showcasing the erosion shoe by jamesjfrys and Zellerfeld.
 tags: [3d, spatial, 3d animation, 3d motion, prodviz]
-title: JAMESJFRYS X Zellerfel
+title: JAMESJFRYS X Zellerfeld
 teaser: Created ‘Erosion’ shoe and visual commercials for high-impact release on the footwear platform
 ---
 
