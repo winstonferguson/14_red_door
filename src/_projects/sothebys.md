@@ -1,12 +1,14 @@
 ---
 layout: default
 image_directory: 'projects/sothebys'
+image_feature: 'feature.png'
 page_class: project
-position: 5
+position: 0
 status: complete
 summary:  3d visuals for a sothebys auction.
 tags: [3d]
-title: Sothebys
+title: Sotheby's
+teaser: Hyper-realistic 3D visuals of a yet-to-exist grill, securing auction placement 
 ---
 
 <%= render Project::Intro.new(site: @site, resource: @resource) do %>
@@ -15,6 +17,6 @@ title: Sothebys
 
 <% end %>
 
-<%= render Project::FeatureImage.new(resource: @resource, src: 'feature.png') %>
+<%= render Project::FeatureImage.new(resource: @resource) %>
 
 <%= render Project::Gallery.new(resource: @resource, srcs: %w[1.png 2.png]) %>

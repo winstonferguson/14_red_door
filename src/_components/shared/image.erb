@@ -1,4 +1,4 @@
-<picture class="picture" data-controller="image-aspect">
+<picture class="picture <%= @css %>" data-controller="image-aspect">
   <% sizes = @sizes.empty? ? [320, 640, 960, 1200, 2560] : @sizes %>
 
   <% sizes.each do |size| %>
@@ -11,5 +11,6 @@
   <img
     src="<%= relative_url responsive_image_path(@src, width: 2560, format: 'jpg') %>"
     alt="<%= @alt %>"
+    class="<%= @css %>"
   />
 </picture>

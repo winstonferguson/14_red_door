@@ -3,11 +3,13 @@ layout: default
 link: https://sawandsew.com
 page_class: project
 image_directory: 'projects/saw_and_sew'
-position: 0
+image_feature: 'feature.png'
+position: 1
 status: complete
 summary: Founded in 2018, Saw & Sew creates bespoke furniture, blending artistry, technology, and local materials to redefine design.
 tags: [3d, web, spatial]
 title: Saw & Sew
+teaser: Visual campaigns of a London-based furniture company for expansion
 ---
 
 <%= render Project::Intro.new(site: @site, resource: @resource) do %>
@@ -18,7 +20,7 @@ title: Saw & Sew
 
 <% end %>
 
-<%= render Project::FeatureImage.new(resource: @resource, src: 'feature.png') %>
+<%= render Project::FeatureImage.new(resource: @resource) %>
 
 We created visuals that embody the ethos of empowering the user by showcasing furniture in its purest form.
 

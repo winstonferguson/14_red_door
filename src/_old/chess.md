@@ -2,6 +2,7 @@
 layout: default
 page_class: project chess
 image_directory: 'projects/chess'
+image_feature: 'feature.jpeg'
 position: 7
 status: complete
 summary: a 1 of 1 sculptural chess set exploring subtraction and timelessness with artist jamesjfrys. 
@@ -15,7 +16,7 @@ title: Chess
 
 <% end %>
 
-<%= render Project::FeatureImage.new(resource: @resource, src: 'feature.jpeg') %>
+<%= render Project::FeatureImage.new(resource: @resource) %>
 
 Crafted in-house at 14 red door with the artist, this chess set redesigns the game through subtraction.  
 

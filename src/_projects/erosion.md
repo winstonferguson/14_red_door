@@ -1,12 +1,14 @@
 ---
 layout: default
 image_directory: 'projects/erosion'
+image_feature: 'feature.jpg'
 page_class: project erosion
 position: 2
 status: complete
 summary:  an animation, showcasing the erosion shoe by jamesjfrys and Zellerfeld.
 tags: [3d, spatial, 3d animation, 3d motion, prodviz]
-title: Erosion
+title: JAMESJFRYS X Zellerfel
+teaser: Created ‘Erosion’ shoe and visual commercials for high-impact release on the footwear platform
 ---
 
 <%= render Project::Intro.new(site: @site, resource: @resource) do %>
